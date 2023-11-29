@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2023-11-28">
+    <creator>NetworkX 3.1</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="type" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Age Group Adult" label="Age Group Adult">
+        <attvalues>
+          <attvalue for="0" value="age_group" />
+        </attvalues>
+      </node>
+      <node id="Area 77th Street" label="Area 77th Street">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Age Group Senior" label="Age Group Senior">
+        <attvalues>
+          <attvalue for="0" value="age_group" />
+        </attvalues>
+      </node>
+      <node id="Area Topanga" label="Area Topanga">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Area Central" label="Area Central">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Age Group Young Adult" label="Age Group Young Adult">
+        <attvalues>
+          <attvalue for="0" value="age_group" />
+        </attvalues>
+      </node>
+      <node id="Area Van Nuys" label="Area Van Nuys">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Age Group Child" label="Age Group Child">
+        <attvalues>
+          <attvalue for="0" value="age_group" />
+        </attvalues>
+      </node>
+      <node id="Area N Hollywood" label="Area N Hollywood">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Area Southeast" label="Area Southeast">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Area Northeast" label="Area Northeast">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Area Newton" label="Area Newton">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Area Pacific" label="Area Pacific">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Area Devonshire" label="Area Devonshire">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Age Group Teenager" label="Age Group Teenager">
+        <attvalues>
+          <attvalue for="0" value="age_group" />
+        </attvalues>
+      </node>
+      <node id="Area West Valley" label="Area West Valley">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Area Foothill" label="Area Foothill">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Area Mission" label="Area Mission">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Area Olympic" label="Area Olympic">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Area Southwest" label="Area Southwest">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Area Rampart" label="Area Rampart">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Area Harbor" label="Area Harbor">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Area Hollenbeck" label="Area Hollenbeck">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Area Hollywood" label="Area Hollywood">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Area West LA" label="Area West LA">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+      <node id="Area Wilshire" label="Area Wilshire">
+        <attvalues>
+          <attvalue for="0" value="area" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Age Group Adult" target="Area 77th Street" id="0" weight="49644" />
+      <edge source="Age Group Adult" target="Area Central" id="1" weight="35187" />
+      <edge source="Age Group Adult" target="Area Northeast" id="2" weight="35375" />
+      <edge source="Age Group Adult" target="Area Pacific" id="3" weight="40165" />
+      <edge source="Age Group Adult" target="Area N Hollywood" id="4" weight="40136" />
+      <edge source="Age Group Adult" target="Area Devonshire" id="5" weight="33622" />
+      <edge source="Age Group Adult" target="Area Newton" id="6" weight="29764" />
+      <edge source="Age Group Adult" target="Area Mission" id="7" weight="34900" />
+      <edge source="Age Group Adult" target="Area Olympic" id="8" weight="30200" />
+      <edge source="Age Group Adult" target="Area Topanga" id="9" weight="37751" />
+      <edge source="Age Group Adult" target="Area West Valley" id="10" weight="32090" />
+      <edge source="Age Group Adult" target="Area Southeast" id="11" weight="36309" />
+      <edge source="Age Group Adult" target="Area Foothill" id="12" weight="27391" />
+      <edge source="Age Group Adult" target="Area Southwest" id="13" weight="43615" />
+      <edge source="Age Group Adult" target="Area Rampart" id="14" weight="29445" />
+      <edge source="Age Group Adult" target="Area Harbor" id="15" weight="30465" />
+      <edge source="Age Group Adult" target="Area Hollenbeck" id="16" weight="22244" />
+      <edge source="Age Group Adult" target="Area Hollywood" id="17" weight="30921" />
+      <edge source="Age Group Adult" target="Area West LA" id="18" weight="32632" />
+      <edge source="Age Group Adult" target="Area Wilshire" id="19" weight="31168" />
+      <edge source="Age Group Adult" target="Area Van Nuys" id="20" weight="36473" />
+      <edge source="Area 77th Street" target="Age Group Young Adult" id="21" weight="28391" />
+      <edge source="Area 77th Street" target="Age Group Senior" id="22" weight="8561" />
+      <edge source="Area 77th Street" target="Age Group Teenager" id="23" weight="6367" />
+      <edge source="Area 77th Street" target="Age Group Child" id="24" weight="2032" />
+      <edge source="Age Group Senior" target="Area Topanga" id="25" weight="8335" />
+      <edge source="Age Group Senior" target="Area Central" id="26" weight="5068" />
+      <edge source="Age Group Senior" target="Area Newton" id="27" weight="3638" />
+      <edge source="Age Group Senior" target="Area Devonshire" id="28" weight="9394" />
+      <edge source="Age Group Senior" target="Area Pacific" id="29" weight="8220" />
+      <edge source="Age Group Senior" target="Area Northeast" id="30" weight="7188" />
+      <edge source="Age Group Senior" target="Area West Valley" id="31" weight="8138" />
+      <edge source="Age Group Senior" target="Area Mission" id="32" weight="5690" />
+      <edge source="Age Group Senior" target="Area N Hollywood" id="33" weight="7590" />
+      <edge source="Age Group Senior" target="Area Rampart" id="34" weight="4462" />
+      <edge source="Age Group Senior" target="Area Southwest" id="35" weight="8521" />
+      <edge source="Age Group Senior" target="Area Hollenbeck" id="36" weight="3886" />
+      <edge source="Age Group Senior" target="Area Harbor" id="37" weight="6667" />
+      <edge source="Age Group Senior" target="Area Hollywood" id="38" weight="4514" />
+      <edge source="Age Group Senior" target="Area Wilshire" id="39" weight="6317" />
+      <edge source="Age Group Senior" target="Area West LA" id="40" weight="9756" />
+      <edge source="Age Group Senior" target="Area Van Nuys" id="41" weight="6851" />
+      <edge source="Age Group Senior" target="Area Foothill" id="42" weight="5209" />
+      <edge source="Age Group Senior" target="Area Southeast" id="43" weight="5463" />
+      <edge source="Age Group Senior" target="Area Olympic" id="44" weight="5248" />
+      <edge source="Area Topanga" target="Age Group Teenager" id="45" weight="2143" />
+      <edge source="Area Topanga" target="Age Group Young Adult" id="46" weight="17028" />
+      <edge source="Area Topanga" target="Age Group Child" id="47" weight="475" />
+      <edge source="Area Central" target="Age Group Young Adult" id="48" weight="17764" />
+      <edge source="Area Central" target="Age Group Child" id="49" weight="407" />
+      <edge source="Area Central" target="Age Group Teenager" id="50" weight="1107" />
+      <edge source="Age Group Young Adult" target="Area Van Nuys" id="51" weight="16933" />
+      <edge source="Age Group Young Adult" target="Area Southeast" id="52" weight="23145" />
+      <edge source="Age Group Young Adult" target="Area Pacific" id="53" weight="17103" />
+      <edge source="Age Group Young Adult" target="Area N Hollywood" id="54" weight="20049" />
+      <edge source="Age Group Young Adult" target="Area Devonshire" id="55" weight="15224" />
+      <edge source="Age Group Young Adult" target="Area West Valley" id="56" weight="12488" />
+      <edge source="Age Group Young Adult" target="Area Foothill" id="57" weight="13171" />
+      <edge source="Age Group Young Adult" target="Area Northeast" id="58" weight="15498" />
+      <edge source="Age Group Young Adult" target="Area Newton" id="59" weight="17964" />
+      <edge source="Age Group Young Adult" target="Area Mission" id="60" weight="18522" />
+      <edge source="Age Group Young Adult" target="Area Olympic" id="61" weight="17441" />
+      <edge source="Age Group Young Adult" target="Area Rampart" id="62" weight="18825" />
+      <edge source="Age Group Young Adult" target="Area Southwest" id="63" weight="31689" />
+      <edge source="Age Group Young Adult" target="Area Hollenbeck" id="64" weight="12400" />
+      <edge source="Age Group Young Adult" target="Area Harbor" id="65" weight="13799" />
+      <edge source="Age Group Young Adult" target="Area Hollywood" id="66" weight="21856" />
+      <edge source="Age Group Young Adult" target="Area Wilshire" id="67" weight="14389" />
+      <edge source="Age Group Young Adult" target="Area West LA" id="68" weight="13426" />
+      <edge source="Area Van Nuys" target="Age Group Teenager" id="69" weight="2130" />
+      <edge source="Area Van Nuys" target="Age Group Child" id="70" weight="611" />
+      <edge source="Age Group Child" target="Area N Hollywood" id="71" weight="3229" />
+      <edge source="Age Group Child" target="Area Newton" id="72" weight="1646" />
+      <edge source="Age Group Child" target="Area Northeast" id="73" weight="498" />
+      <edge source="Age Group Child" target="Area Rampart" id="74" weight="1641" />
+      <edge source="Age Group Child" target="Area Mission" id="75" weight="1927" />
+      <edge source="Age Group Child" target="Area Southwest" id="76" weight="1562" />
+      <edge source="Age Group Child" target="Area Hollenbeck" id="77" weight="918" />
+      <edge source="Age Group Child" target="Area Harbor" id="78" weight="2156" />
+      <edge source="Age Group Child" target="Area Hollywood" id="79" weight="350" />
+      <edge source="Age Group Child" target="Area Wilshire" id="80" weight="742" />
+      <edge source="Age Group Child" target="Area West LA" id="81" weight="247" />
+      <edge source="Age Group Child" target="Area West Valley" id="82" weight="423" />
+      <edge source="Age Group Child" target="Area Pacific" id="83" weight="437" />
+      <edge source="Age Group Child" target="Area Foothill" id="84" weight="703" />
+      <edge source="Age Group Child" target="Area Devonshire" id="85" weight="1452" />
+      <edge source="Age Group Child" target="Area Southeast" id="86" weight="1095" />
+      <edge source="Age Group Child" target="Area Olympic" id="87" weight="662" />
+      <edge source="Area N Hollywood" target="Age Group Teenager" id="88" weight="5787" />
+      <edge source="Area Southeast" target="Age Group Teenager" id="89" weight="4633" />
+      <edge source="Area Northeast" target="Age Group Teenager" id="90" weight="2411" />
+      <edge source="Area Newton" target="Age Group Teenager" id="91" weight="4375" />
+      <edge source="Area Pacific" target="Age Group Teenager" id="92" weight="1642" />
+      <edge source="Area Devonshire" target="Age Group Teenager" id="93" weight="2388" />
+      <edge source="Age Group Teenager" target="Area Foothill" id="94" weight="2556" />
+      <edge source="Age Group Teenager" target="Area West Valley" id="95" weight="1790" />
+      <edge source="Age Group Teenager" target="Area Rampart" id="96" weight="3494" />
+      <edge source="Age Group Teenager" target="Area Southwest" id="97" weight="4722" />
+      <edge source="Age Group Teenager" target="Area Hollenbeck" id="98" weight="2890" />
+      <edge source="Age Group Teenager" target="Area Harbor" id="99" weight="4038" />
+      <edge source="Age Group Teenager" target="Area Hollywood" id="100" weight="1323" />
+      <edge source="Age Group Teenager" target="Area Wilshire" id="101" weight="2760" />
+      <edge source="Age Group Teenager" target="Area West LA" id="102" weight="1552" />
+      <edge source="Age Group Teenager" target="Area Mission" id="103" weight="4678" />
+      <edge source="Age Group Teenager" target="Area Olympic" id="104" weight="2215" />
+    </edges>
+  </graph>
+</gexf>

@@ -1,0 +1,2276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1eee1fb9dc08a1bec6e7cd7a4e3eda02 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1eee1fb9dc08a1bec6e7cd7a4e3eda02" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1eee1fb9dc08a1bec6e7cd7a4e3eda02 = L.map(
+                "map_1eee1fb9dc08a1bec6e7cd7a4e3eda02",
+                {
+                    center: [34.0522, -118.2437],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_64e9fb0d2130584091e65477e4463a6b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_64e9fb0d2130584091e65477e4463a6b.addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+    
+            var circle_8b4ba5dacf85074189efc1c03164121c = L.circle(
+                [33.9829, -118.3338],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 992.88, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_78cbafbe5e570547c20f8b7ceef2856d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bce9961fc9d3bd8981a896dc35d0aae = $(`<div id="html_4bce9961fc9d3bd8981a896dc35d0aae" style="width: 100.0%; height: 100.0%;">Area: 77th Street<br>Age Group: Adult<br>Incidents: 49644</div>`)[0];
+                popup_78cbafbe5e570547c20f8b7ceef2856d.setContent(html_4bce9961fc9d3bd8981a896dc35d0aae);
+            
+        
+
+        circle_8b4ba5dacf85074189efc1c03164121c.bindPopup(popup_78cbafbe5e570547c20f8b7ceef2856d)
+        ;
+
+        
+    
+    
+            var circle_fd524b3a3431de6f38ceba9971daf2f6 = L.circle(
+                [34.0037, -118.3045],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 872.3000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_0b134af650d82cb1cb91befa36f509b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc3ae83396af46e642be3e84cfa1a6d1 = $(`<div id="html_cc3ae83396af46e642be3e84cfa1a6d1" style="width: 100.0%; height: 100.0%;">Area: Southwest<br>Age Group: Adult<br>Incidents: 43615</div>`)[0];
+                popup_0b134af650d82cb1cb91befa36f509b0.setContent(html_cc3ae83396af46e642be3e84cfa1a6d1);
+            
+        
+
+        circle_fd524b3a3431de6f38ceba9971daf2f6.bindPopup(popup_0b134af650d82cb1cb91befa36f509b0)
+        ;
+
+        
+    
+    
+            var circle_44951bf4887c965f894a3f2a2ea6d11a = L.circle(
+                [33.9489, -118.3939],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 803.3000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_3b3cb533e4f56e10356231e01e78c401 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5045dc3198e38422b9c7c19923f4692 = $(`<div id="html_d5045dc3198e38422b9c7c19923f4692" style="width: 100.0%; height: 100.0%;">Area: Pacific<br>Age Group: Adult<br>Incidents: 40165</div>`)[0];
+                popup_3b3cb533e4f56e10356231e01e78c401.setContent(html_d5045dc3198e38422b9c7c19923f4692);
+            
+        
+
+        circle_44951bf4887c965f894a3f2a2ea6d11a.bindPopup(popup_3b3cb533e4f56e10356231e01e78c401)
+        ;
+
+        
+    
+    
+            var circle_9bc4a743f71bd8f847584bb5383bff84 = L.circle(
+                [34.1831, -118.3833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 802.72, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_e43849b3cb8ea1d3049556216b957660 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40126add423b4bdb10b1b224d3325b1d = $(`<div id="html_40126add423b4bdb10b1b224d3325b1d" style="width: 100.0%; height: 100.0%;">Area: N Hollywood<br>Age Group: Adult<br>Incidents: 40136</div>`)[0];
+                popup_e43849b3cb8ea1d3049556216b957660.setContent(html_40126add423b4bdb10b1b224d3325b1d);
+            
+        
+
+        circle_9bc4a743f71bd8f847584bb5383bff84.bindPopup(popup_e43849b3cb8ea1d3049556216b957660)
+        ;
+
+        
+    
+    
+            var circle_c04897cc4b920c1d36cbd160acaa9a5f = L.circle(
+                [34.207, -118.644],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 755.02, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_c48f0bc80f209a5177946148c2e26c70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21393a2661915cee89f84b7513044e56 = $(`<div id="html_21393a2661915cee89f84b7513044e56" style="width: 100.0%; height: 100.0%;">Area: Topanga<br>Age Group: Adult<br>Incidents: 37751</div>`)[0];
+                popup_c48f0bc80f209a5177946148c2e26c70.setContent(html_21393a2661915cee89f84b7513044e56);
+            
+        
+
+        circle_c04897cc4b920c1d36cbd160acaa9a5f.bindPopup(popup_c48f0bc80f209a5177946148c2e26c70)
+        ;
+
+        
+    
+    
+            var circle_4cc2d6c27544bd12cc76c5d20c40b3ef = L.circle(
+                [34.1976, -118.4367],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 729.46, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_41f1f4f2a02ca28adf7535bfd7d294ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5144a08a98bb7d49b849b90673ae721a = $(`<div id="html_5144a08a98bb7d49b849b90673ae721a" style="width: 100.0%; height: 100.0%;">Area: Van Nuys<br>Age Group: Adult<br>Incidents: 36473</div>`)[0];
+                popup_41f1f4f2a02ca28adf7535bfd7d294ff.setContent(html_5144a08a98bb7d49b849b90673ae721a);
+            
+        
+
+        circle_4cc2d6c27544bd12cc76c5d20c40b3ef.bindPopup(popup_41f1f4f2a02ca28adf7535bfd7d294ff)
+        ;
+
+        
+    
+    
+            var circle_d93749396d64cb497564a1f7b0b2739d = L.circle(
+                [33.9578, -118.2651],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 726.1800000000001, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_b9837d5480cdf4d13b9af834b531c63c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b8d4a52fdef7ed42409be4edcad6d79 = $(`<div id="html_1b8d4a52fdef7ed42409be4edcad6d79" style="width: 100.0%; height: 100.0%;">Area: Southeast<br>Age Group: Adult<br>Incidents: 36309</div>`)[0];
+                popup_b9837d5480cdf4d13b9af834b531c63c.setContent(html_1b8d4a52fdef7ed42409be4edcad6d79);
+            
+        
+
+        circle_d93749396d64cb497564a1f7b0b2739d.bindPopup(popup_b9837d5480cdf4d13b9af834b531c63c)
+        ;
+
+        
+    
+    
+            var circle_73c9153ede0f97b7da88fc48d836bdc8 = L.circle(
+                [34.0825, -118.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 707.5, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_e121f3fd171f95bdb08ada27d6c926e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45e34d42ce6fad02f8d6b07ffc99c9e2 = $(`<div id="html_45e34d42ce6fad02f8d6b07ffc99c9e2" style="width: 100.0%; height: 100.0%;">Area: Northeast<br>Age Group: Adult<br>Incidents: 35375</div>`)[0];
+                popup_e121f3fd171f95bdb08ada27d6c926e7.setContent(html_45e34d42ce6fad02f8d6b07ffc99c9e2);
+            
+        
+
+        circle_73c9153ede0f97b7da88fc48d836bdc8.bindPopup(popup_e121f3fd171f95bdb08ada27d6c926e7)
+        ;
+
+        
+    
+    
+            var circle_76fe364426e60fa0db89c0438aaa3241 = L.circle(
+                [34.0591, -118.2412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 703.74, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_65c5f9c476fd289dcc6252776b441bb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3206b4b0b9183a7954654544cf7474bc = $(`<div id="html_3206b4b0b9183a7954654544cf7474bc" style="width: 100.0%; height: 100.0%;">Area: Central<br>Age Group: Adult<br>Incidents: 35187</div>`)[0];
+                popup_65c5f9c476fd289dcc6252776b441bb5.setContent(html_3206b4b0b9183a7954654544cf7474bc);
+            
+        
+
+        circle_76fe364426e60fa0db89c0438aaa3241.bindPopup(popup_65c5f9c476fd289dcc6252776b441bb5)
+        ;
+
+        
+    
+    
+            var circle_e1baa6e3f09d3220d37cfc13795a1562 = L.circle(
+                [34.2717, -118.4459],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 698.0, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_ddc57d204eaf41bc4439313cc9c1ffd3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e0f7d959d32acb06c4d45c0ba8713c8 = $(`<div id="html_4e0f7d959d32acb06c4d45c0ba8713c8" style="width: 100.0%; height: 100.0%;">Area: Mission<br>Age Group: Adult<br>Incidents: 34900</div>`)[0];
+                popup_ddc57d204eaf41bc4439313cc9c1ffd3.setContent(html_4e0f7d959d32acb06c4d45c0ba8713c8);
+            
+        
+
+        circle_e1baa6e3f09d3220d37cfc13795a1562.bindPopup(popup_ddc57d204eaf41bc4439313cc9c1ffd3)
+        ;
+
+        
+    
+    
+            var circle_91f857b197d4b144ea15cfad88234985 = L.circle(
+                [34.25, -118.5973],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 672.44, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_a72ddc76ec16549b6af40c4010d11085 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c14ddfcf9708cf419827cebcf8a8addb = $(`<div id="html_c14ddfcf9708cf419827cebcf8a8addb" style="width: 100.0%; height: 100.0%;">Area: Devonshire<br>Age Group: Adult<br>Incidents: 33622</div>`)[0];
+                popup_a72ddc76ec16549b6af40c4010d11085.setContent(html_c14ddfcf9708cf419827cebcf8a8addb);
+            
+        
+
+        circle_91f857b197d4b144ea15cfad88234985.bindPopup(popup_a72ddc76ec16549b6af40c4010d11085)
+        ;
+
+        
+    
+    
+            var circle_b7b1f481937c46b384759df8ada7ce3d = L.circle(
+                [34.1069, -118.4055],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 652.64, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_0f77c090177d9421529ccb46becafacf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_200912d55cce9e7016b888215f44296d = $(`<div id="html_200912d55cce9e7016b888215f44296d" style="width: 100.0%; height: 100.0%;">Area: West LA<br>Age Group: Adult<br>Incidents: 32632</div>`)[0];
+                popup_0f77c090177d9421529ccb46becafacf.setContent(html_200912d55cce9e7016b888215f44296d);
+            
+        
+
+        circle_b7b1f481937c46b384759df8ada7ce3d.bindPopup(popup_0f77c090177d9421529ccb46becafacf)
+        ;
+
+        
+    
+    
+            var circle_5931124f58df7cb1ad431a3d85dc6603 = L.circle(
+                [34.2084, -118.5557],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 641.8000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_3c1b3563c92610b75f61567f906b5e5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13d3d6af5f6784a52a830fd3789e6160 = $(`<div id="html_13d3d6af5f6784a52a830fd3789e6160" style="width: 100.0%; height: 100.0%;">Area: West Valley<br>Age Group: Adult<br>Incidents: 32090</div>`)[0];
+                popup_3c1b3563c92610b75f61567f906b5e5d.setContent(html_13d3d6af5f6784a52a830fd3789e6160);
+            
+        
+
+        circle_5931124f58df7cb1ad431a3d85dc6603.bindPopup(popup_3c1b3563c92610b75f61567f906b5e5d)
+        ;
+
+        
+    
+    
+            var circle_5f4a291f024e1049ab8432c683964e1b = L.circle(
+                [34.0215, -118.2868],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 633.78, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_b3fb678eac7196070387e294ed349d38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14fc7dd46ae7603762e56264381511b8 = $(`<div id="html_14fc7dd46ae7603762e56264381511b8" style="width: 100.0%; height: 100.0%;">Area: Southwest<br>Age Group: Young Adult<br>Incidents: 31689</div>`)[0];
+                popup_b3fb678eac7196070387e294ed349d38.setContent(html_14fc7dd46ae7603762e56264381511b8);
+            
+        
+
+        circle_5f4a291f024e1049ab8432c683964e1b.bindPopup(popup_b3fb678eac7196070387e294ed349d38)
+        ;
+
+        
+    
+    
+            var circle_522f5d4d394917431e9cab287a7b880f = L.circle(
+                [34.0835, -118.3386],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 623.36, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_eb771e51851dafe543919c864e7a2d49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1fd22c87567f64ff83a119ebf003c02 = $(`<div id="html_f1fd22c87567f64ff83a119ebf003c02" style="width: 100.0%; height: 100.0%;">Area: Wilshire<br>Age Group: Adult<br>Incidents: 31168</div>`)[0];
+                popup_eb771e51851dafe543919c864e7a2d49.setContent(html_f1fd22c87567f64ff83a119ebf003c02);
+            
+        
+
+        circle_522f5d4d394917431e9cab287a7b880f.bindPopup(popup_eb771e51851dafe543919c864e7a2d49)
+        ;
+
+        
+    
+    
+            var circle_104e97df16030599b0cc7ead54b78511 = L.circle(
+                [34.1108, -118.3675],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 618.42, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_8a3fd260a1016a11b817e63876f52365 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4ce593372710d1100cde35c83841208 = $(`<div id="html_a4ce593372710d1100cde35c83841208" style="width: 100.0%; height: 100.0%;">Area: Hollywood<br>Age Group: Adult<br>Incidents: 30921</div>`)[0];
+                popup_8a3fd260a1016a11b817e63876f52365.setContent(html_a4ce593372710d1100cde35c83841208);
+            
+        
+
+        circle_104e97df16030599b0cc7ead54b78511.bindPopup(popup_8a3fd260a1016a11b817e63876f52365)
+        ;
+
+        
+    
+    
+            var circle_4c880a16e9ca7cf38f4dae31925ed652 = L.circle(
+                [33.804, -118.3004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 609.3000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_3d41006529e900ccb17be56f774f256e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_237bdc9d8d01647d48fdcfc88cc007e3 = $(`<div id="html_237bdc9d8d01647d48fdcfc88cc007e3" style="width: 100.0%; height: 100.0%;">Area: Harbor<br>Age Group: Adult<br>Incidents: 30465</div>`)[0];
+                popup_3d41006529e900ccb17be56f774f256e.setContent(html_237bdc9d8d01647d48fdcfc88cc007e3);
+            
+        
+
+        circle_4c880a16e9ca7cf38f4dae31925ed652.bindPopup(popup_3d41006529e900ccb17be56f774f256e)
+        ;
+
+        
+    
+    
+            var circle_04e774081f87bd74cf585858b3954817 = L.circle(
+                [34.0597, -118.3042],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 604.0, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_37c764b5c43274afccf3cdf8c28d9df8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c575f7180f39c3f03fff3a80d3b15d3 = $(`<div id="html_9c575f7180f39c3f03fff3a80d3b15d3" style="width: 100.0%; height: 100.0%;">Area: Olympic<br>Age Group: Adult<br>Incidents: 30200</div>`)[0];
+                popup_37c764b5c43274afccf3cdf8c28d9df8.setContent(html_9c575f7180f39c3f03fff3a80d3b15d3);
+            
+        
+
+        circle_04e774081f87bd74cf585858b3954817.bindPopup(popup_37c764b5c43274afccf3cdf8c28d9df8)
+        ;
+
+        
+    
+    
+            var circle_2a9fad8f3cd48199829a21ae3014b0c2 = L.circle(
+                [33.9935, -118.2579],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 595.28, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_51b47423d4f0a33abc1562c5d977d9eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ade6ca81324b86ed30b2240c7d1b422 = $(`<div id="html_0ade6ca81324b86ed30b2240c7d1b422" style="width: 100.0%; height: 100.0%;">Area: Newton<br>Age Group: Adult<br>Incidents: 29764</div>`)[0];
+                popup_51b47423d4f0a33abc1562c5d977d9eb.setContent(html_0ade6ca81324b86ed30b2240c7d1b422);
+            
+        
+
+        circle_2a9fad8f3cd48199829a21ae3014b0c2.bindPopup(popup_51b47423d4f0a33abc1562c5d977d9eb)
+        ;
+
+        
+    
+    
+            var circle_ff04ba60d81db6abd18655b1f5b9e04b = L.circle(
+                [34.0439, -118.2752],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 588.9, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_37102cca3947e8fc6aadcd8ca95d7ecb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db6e6f3bf73eb7d9022342ebb25a4664 = $(`<div id="html_db6e6f3bf73eb7d9022342ebb25a4664" style="width: 100.0%; height: 100.0%;">Area: Rampart<br>Age Group: Adult<br>Incidents: 29445</div>`)[0];
+                popup_37102cca3947e8fc6aadcd8ca95d7ecb.setContent(html_db6e6f3bf73eb7d9022342ebb25a4664);
+            
+        
+
+        circle_ff04ba60d81db6abd18655b1f5b9e04b.bindPopup(popup_37102cca3947e8fc6aadcd8ca95d7ecb)
+        ;
+
+        
+    
+    
+            var circle_164271efa65fb9f1a445f1e6d9300f34 = L.circle(
+                [33.9651, -118.2754],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 567.82, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_6ad4fb280f18504b6fec06b474e46396 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a0aae7fbdd2eefd54c445faa9b22dbc = $(`<div id="html_6a0aae7fbdd2eefd54c445faa9b22dbc" style="width: 100.0%; height: 100.0%;">Area: 77th Street<br>Age Group: Young Adult<br>Incidents: 28391</div>`)[0];
+                popup_6ad4fb280f18504b6fec06b474e46396.setContent(html_6a0aae7fbdd2eefd54c445faa9b22dbc);
+            
+        
+
+        circle_164271efa65fb9f1a445f1e6d9300f34.bindPopup(popup_6ad4fb280f18504b6fec06b474e46396)
+        ;
+
+        
+    
+    
+            var circle_62cc52eb48aa6409fad6ce16d1391d57 = L.circle(
+                [34.2662, -118.4035],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 547.82, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_7129e93f9a6c32a425fabe578cc2a3dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f225766310a9d8d8a41b837d01007b80 = $(`<div id="html_f225766310a9d8d8a41b837d01007b80" style="width: 100.0%; height: 100.0%;">Area: Foothill<br>Age Group: Adult<br>Incidents: 27391</div>`)[0];
+                popup_7129e93f9a6c32a425fabe578cc2a3dd.setContent(html_f225766310a9d8d8a41b837d01007b80);
+            
+        
+
+        circle_62cc52eb48aa6409fad6ce16d1391d57.bindPopup(popup_7129e93f9a6c32a425fabe578cc2a3dd)
+        ;
+
+        
+    
+    
+            var circle_f2e1e36112a5cf1959ddc4a3e70a751b = L.circle(
+                [33.9456, -118.2652],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 462.90000000000003, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_9634f097a63ff5746bce1ae041f31b60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1cbbba6255fe6279b10a89d4c9de141d = $(`<div id="html_1cbbba6255fe6279b10a89d4c9de141d" style="width: 100.0%; height: 100.0%;">Area: Southeast<br>Age Group: Young Adult<br>Incidents: 23145</div>`)[0];
+                popup_9634f097a63ff5746bce1ae041f31b60.setContent(html_1cbbba6255fe6279b10a89d4c9de141d);
+            
+        
+
+        circle_f2e1e36112a5cf1959ddc4a3e70a751b.bindPopup(popup_9634f097a63ff5746bce1ae041f31b60)
+        ;
+
+        
+    
+    
+            var circle_22cd689e208c7e8e17c1c9736b3d5982 = L.circle(
+                [34.0449, -118.1943],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 444.88, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_4ca5f08430b7bfe8e5681dadca84d3b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a40c42e7aa8878a9645a5fa2f9cf0df = $(`<div id="html_0a40c42e7aa8878a9645a5fa2f9cf0df" style="width: 100.0%; height: 100.0%;">Area: Hollenbeck<br>Age Group: Adult<br>Incidents: 22244</div>`)[0];
+                popup_4ca5f08430b7bfe8e5681dadca84d3b3.setContent(html_0a40c42e7aa8878a9645a5fa2f9cf0df);
+            
+        
+
+        circle_22cd689e208c7e8e17c1c9736b3d5982.bindPopup(popup_4ca5f08430b7bfe8e5681dadca84d3b3)
+        ;
+
+        
+    
+    
+            var circle_50affd196bde15803b47a9e40c53509d = L.circle(
+                [34.1016, -118.3333],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 437.12, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_4835e949cd26891acdddd0163f855973 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b397f2c1d7ba5c031a14948114605f28 = $(`<div id="html_b397f2c1d7ba5c031a14948114605f28" style="width: 100.0%; height: 100.0%;">Area: Hollywood<br>Age Group: Young Adult<br>Incidents: 21856</div>`)[0];
+                popup_4835e949cd26891acdddd0163f855973.setContent(html_b397f2c1d7ba5c031a14948114605f28);
+            
+        
+
+        circle_50affd196bde15803b47a9e40c53509d.bindPopup(popup_4835e949cd26891acdddd0163f855973)
+        ;
+
+        
+    
+    
+            var circle_64170f042e5aa66bf019e857de653e4a = L.circle(
+                [34.2048, -118.3649],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 400.98, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_5804462d4ad2ced63524db9832e0479d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0418936978e4869b4726d8163d403d12 = $(`<div id="html_0418936978e4869b4726d8163d403d12" style="width: 100.0%; height: 100.0%;">Area: N Hollywood<br>Age Group: Young Adult<br>Incidents: 20049</div>`)[0];
+                popup_5804462d4ad2ced63524db9832e0479d.setContent(html_0418936978e4869b4726d8163d403d12);
+            
+        
+
+        circle_64170f042e5aa66bf019e857de653e4a.bindPopup(popup_5804462d4ad2ced63524db9832e0479d)
+        ;
+
+        
+    
+    
+            var circle_60f7759d4db82f25feeb9f5d9605d312 = L.circle(
+                [34.0613, -118.2738],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 376.5, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_361b8509dab100dd0cc63422cee44400 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c514b3ea47a4e3c85b96080031efa9c = $(`<div id="html_8c514b3ea47a4e3c85b96080031efa9c" style="width: 100.0%; height: 100.0%;">Area: Rampart<br>Age Group: Young Adult<br>Incidents: 18825</div>`)[0];
+                popup_361b8509dab100dd0cc63422cee44400.setContent(html_8c514b3ea47a4e3c85b96080031efa9c);
+            
+        
+
+        circle_60f7759d4db82f25feeb9f5d9605d312.bindPopup(popup_361b8509dab100dd0cc63422cee44400)
+        ;
+
+        
+    
+    
+            var circle_ae9ecea086b5c7b5d589d67124ef984b = L.circle(
+                [34.2301, -118.4698],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 370.44, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_8efeb9ae1c126a921c6fb0b3fa3b9a54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de7f7a0b1237ecf9a495c6afe5c01530 = $(`<div id="html_de7f7a0b1237ecf9a495c6afe5c01530" style="width: 100.0%; height: 100.0%;">Area: Mission<br>Age Group: Young Adult<br>Incidents: 18522</div>`)[0];
+                popup_8efeb9ae1c126a921c6fb0b3fa3b9a54.setContent(html_de7f7a0b1237ecf9a495c6afe5c01530);
+            
+        
+
+        circle_ae9ecea086b5c7b5d589d67124ef984b.bindPopup(popup_8efeb9ae1c126a921c6fb0b3fa3b9a54)
+        ;
+
+        
+    
+    
+            var circle_78f5d79d7e3c19b2d391821b8126ffe7 = L.circle(
+                [34.0218, -118.2665],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 359.28000000000003, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_8d8693d66acab12d95582712940d8fb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a90a196359ede64fdba06a7f8a31ca0 = $(`<div id="html_7a90a196359ede64fdba06a7f8a31ca0" style="width: 100.0%; height: 100.0%;">Area: Newton<br>Age Group: Young Adult<br>Incidents: 17964</div>`)[0];
+                popup_8d8693d66acab12d95582712940d8fb0.setContent(html_7a90a196359ede64fdba06a7f8a31ca0);
+            
+        
+
+        circle_78f5d79d7e3c19b2d391821b8126ffe7.bindPopup(popup_8d8693d66acab12d95582712940d8fb0)
+        ;
+
+        
+    
+    
+            var circle_73c4c545650fdd5f11bb5e26d64c84d8 = L.circle(
+                [34.0431, -118.2536],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 355.28000000000003, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_e9125a57ac75d17fb6082aae391cad4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f82281abcf35856cd693e4e6dc766b9b = $(`<div id="html_f82281abcf35856cd693e4e6dc766b9b" style="width: 100.0%; height: 100.0%;">Area: Central<br>Age Group: Young Adult<br>Incidents: 17764</div>`)[0];
+                popup_e9125a57ac75d17fb6082aae391cad4d.setContent(html_f82281abcf35856cd693e4e6dc766b9b);
+            
+        
+
+        circle_73c4c545650fdd5f11bb5e26d64c84d8.bindPopup(popup_e9125a57ac75d17fb6082aae391cad4d)
+        ;
+
+        
+    
+    
+            var circle_bc6e2def912ccb095f673502d3dc760d = L.circle(
+                [34.0526, -118.2989],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 348.82, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_f9adabd901f877a4e4948fa32ea21f5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2a239820eccd929687df25b36f36018 = $(`<div id="html_c2a239820eccd929687df25b36f36018" style="width: 100.0%; height: 100.0%;">Area: Olympic<br>Age Group: Young Adult<br>Incidents: 17441</div>`)[0];
+                popup_f9adabd901f877a4e4948fa32ea21f5a.setContent(html_c2a239820eccd929687df25b36f36018);
+            
+        
+
+        circle_bc6e2def912ccb095f673502d3dc760d.bindPopup(popup_f9adabd901f877a4e4948fa32ea21f5a)
+        ;
+
+        
+    
+    
+            var circle_565081c7c3ce000a33634e39f8803a90 = L.circle(
+                [33.9886, -118.473],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 342.06, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_02e717bc7ea9abd5f917cba6a25a4512 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10d86452d5f4bede2278569d5f7570dc = $(`<div id="html_10d86452d5f4bede2278569d5f7570dc" style="width: 100.0%; height: 100.0%;">Area: Pacific<br>Age Group: Young Adult<br>Incidents: 17103</div>`)[0];
+                popup_02e717bc7ea9abd5f917cba6a25a4512.setContent(html_10d86452d5f4bede2278569d5f7570dc);
+            
+        
+
+        circle_565081c7c3ce000a33634e39f8803a90.bindPopup(popup_02e717bc7ea9abd5f917cba6a25a4512)
+        ;
+
+        
+    
+    
+            var circle_67e6e532acd2ad1622527432fbdc5fff = L.circle(
+                [34.1773, -118.5988],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 340.56, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_fd02b98229aca7f9ecc1ca2e684e3d30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_684d140d6fb4ee71e0de275af14d751b = $(`<div id="html_684d140d6fb4ee71e0de275af14d751b" style="width: 100.0%; height: 100.0%;">Area: Topanga<br>Age Group: Young Adult<br>Incidents: 17028</div>`)[0];
+                popup_fd02b98229aca7f9ecc1ca2e684e3d30.setContent(html_684d140d6fb4ee71e0de275af14d751b);
+            
+        
+
+        circle_67e6e532acd2ad1622527432fbdc5fff.bindPopup(popup_fd02b98229aca7f9ecc1ca2e684e3d30)
+        ;
+
+        
+    
+    
+            var circle_63a902e1bb0892dacc3daf471e7a1dee = L.circle(
+                [34.2012, -118.4662],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 338.66, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_de99b81e0caef168f1cd9b2fb33e1038 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c36d864acb2c23d9f493ffa1cc0d4838 = $(`<div id="html_c36d864acb2c23d9f493ffa1cc0d4838" style="width: 100.0%; height: 100.0%;">Area: Van Nuys<br>Age Group: Young Adult<br>Incidents: 16933</div>`)[0];
+                popup_de99b81e0caef168f1cd9b2fb33e1038.setContent(html_c36d864acb2c23d9f493ffa1cc0d4838);
+            
+        
+
+        circle_63a902e1bb0892dacc3daf471e7a1dee.bindPopup(popup_de99b81e0caef168f1cd9b2fb33e1038)
+        ;
+
+        
+    
+    
+            var circle_24d4ed7f9a7dc9fdac1b3eaa10608406 = L.circle(
+                [34.1251, -118.2024],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 309.96, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_d6d3b82d35c51167ac64f97e8e281104 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abb7df665b04ce0031d83f590fc5662d = $(`<div id="html_abb7df665b04ce0031d83f590fc5662d" style="width: 100.0%; height: 100.0%;">Area: Northeast<br>Age Group: Young Adult<br>Incidents: 15498</div>`)[0];
+                popup_d6d3b82d35c51167ac64f97e8e281104.setContent(html_abb7df665b04ce0031d83f590fc5662d);
+            
+        
+
+        circle_24d4ed7f9a7dc9fdac1b3eaa10608406.bindPopup(popup_d6d3b82d35c51167ac64f97e8e281104)
+        ;
+
+        
+    
+    
+            var circle_0a2b429fc5afdc93405c967906f5899d = L.circle(
+                [34.2746, -118.5586],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 304.48, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_e1c8fb9ef16ba87efa7b6b0b7d42c981 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_668fdea4169db80d27153f9ab2d82a3a = $(`<div id="html_668fdea4169db80d27153f9ab2d82a3a" style="width: 100.0%; height: 100.0%;">Area: Devonshire<br>Age Group: Young Adult<br>Incidents: 15224</div>`)[0];
+                popup_e1c8fb9ef16ba87efa7b6b0b7d42c981.setContent(html_668fdea4169db80d27153f9ab2d82a3a);
+            
+        
+
+        circle_0a2b429fc5afdc93405c967906f5899d.bindPopup(popup_e1c8fb9ef16ba87efa7b6b0b7d42c981)
+        ;
+
+        
+    
+    
+            var circle_4d1cf286c452e3cba0748c6f91f13631 = L.circle(
+                [34.0649, -118.3514],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 287.78000000000003, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_9478d11e70ed8bd5e8bc35232e94834c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00d2ed3771cabdb671ed3cf960e65775 = $(`<div id="html_00d2ed3771cabdb671ed3cf960e65775" style="width: 100.0%; height: 100.0%;">Area: Wilshire<br>Age Group: Young Adult<br>Incidents: 14389</div>`)[0];
+                popup_9478d11e70ed8bd5e8bc35232e94834c.setContent(html_00d2ed3771cabdb671ed3cf960e65775);
+            
+        
+
+        circle_4d1cf286c452e3cba0748c6f91f13631.bindPopup(popup_9478d11e70ed8bd5e8bc35232e94834c)
+        ;
+
+        
+    
+    
+            var circle_5e44d8b5cef4c61a413cb1dd624ca689 = L.circle(
+                [33.7434, -118.2998],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 275.98, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_d47c8e5d22ff4d319af2ef9d45b3272b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9124fa20e5d78705913d734adbca09b5 = $(`<div id="html_9124fa20e5d78705913d734adbca09b5" style="width: 100.0%; height: 100.0%;">Area: Harbor<br>Age Group: Young Adult<br>Incidents: 13799</div>`)[0];
+                popup_d47c8e5d22ff4d319af2ef9d45b3272b.setContent(html_9124fa20e5d78705913d734adbca09b5);
+            
+        
+
+        circle_5e44d8b5cef4c61a413cb1dd624ca689.bindPopup(popup_d47c8e5d22ff4d319af2ef9d45b3272b)
+        ;
+
+        
+    
+    
+            var circle_ee38426e4c26c9c4a837516a7806d0b9 = L.circle(
+                [34.0516, -118.3809],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 268.52, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_a1d86b902be901c8b76e4638efb750d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbb5948677ae440f32516b13555c05e9 = $(`<div id="html_bbb5948677ae440f32516b13555c05e9" style="width: 100.0%; height: 100.0%;">Area: West LA<br>Age Group: Young Adult<br>Incidents: 13426</div>`)[0];
+                popup_a1d86b902be901c8b76e4638efb750d6.setContent(html_bbb5948677ae440f32516b13555c05e9);
+            
+        
+
+        circle_ee38426e4c26c9c4a837516a7806d0b9.bindPopup(popup_a1d86b902be901c8b76e4638efb750d6)
+        ;
+
+        
+    
+    
+            var circle_18c00176be2b85ed522b4f9baea73290 = L.circle(
+                [34.2679, -118.3008],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 263.42, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_fbb1147e5804e7f53658872b9d497d76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce1e8d2907f4721383f3a4af5cedab9e = $(`<div id="html_ce1e8d2907f4721383f3a4af5cedab9e" style="width: 100.0%; height: 100.0%;">Area: Foothill<br>Age Group: Young Adult<br>Incidents: 13171</div>`)[0];
+                popup_fbb1147e5804e7f53658872b9d497d76.setContent(html_ce1e8d2907f4721383f3a4af5cedab9e);
+            
+        
+
+        circle_18c00176be2b85ed522b4f9baea73290.bindPopup(popup_fbb1147e5804e7f53658872b9d497d76)
+        ;
+
+        
+    
+    
+            var circle_5f91ad84b981d5e0cd31fafcccc3ef84 = L.circle(
+                [34.1903, -118.5262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 249.76000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_b05a8c74ea185e03a994a3adf2b6c994 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b345fa82323e24575b17dd31cc296d10 = $(`<div id="html_b345fa82323e24575b17dd31cc296d10" style="width: 100.0%; height: 100.0%;">Area: West Valley<br>Age Group: Young Adult<br>Incidents: 12488</div>`)[0];
+                popup_b05a8c74ea185e03a994a3adf2b6c994.setContent(html_b345fa82323e24575b17dd31cc296d10);
+            
+        
+
+        circle_5f91ad84b981d5e0cd31fafcccc3ef84.bindPopup(popup_b05a8c74ea185e03a994a3adf2b6c994)
+        ;
+
+        
+    
+    
+            var circle_3ba5ea6b171f701c0fc6244d90ac3d07 = L.circle(
+                [34.0427, -118.2237],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 248.0, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_d94d209e414104f63c618edd7e2f77fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67c093e443b6abd285995919cb3d61b9 = $(`<div id="html_67c093e443b6abd285995919cb3d61b9" style="width: 100.0%; height: 100.0%;">Area: Hollenbeck<br>Age Group: Young Adult<br>Incidents: 12400</div>`)[0];
+                popup_d94d209e414104f63c618edd7e2f77fe.setContent(html_67c093e443b6abd285995919cb3d61b9);
+            
+        
+
+        circle_3ba5ea6b171f701c0fc6244d90ac3d07.bindPopup(popup_d94d209e414104f63c618edd7e2f77fe)
+        ;
+
+        
+    
+    
+            var circle_0494774ec043ccd2217b582c12e9c875 = L.circle(
+                [34.0416, -118.3999],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 195.12, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_e741f7c86287d8de890034a2e98c35a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b901e4f84a8bf2c5561982d9c15d6bb4 = $(`<div id="html_b901e4f84a8bf2c5561982d9c15d6bb4" style="width: 100.0%; height: 100.0%;">Area: West LA<br>Age Group: Senior<br>Incidents: 9756</div>`)[0];
+                popup_e741f7c86287d8de890034a2e98c35a7.setContent(html_b901e4f84a8bf2c5561982d9c15d6bb4);
+            
+        
+
+        circle_0494774ec043ccd2217b582c12e9c875.bindPopup(popup_e741f7c86287d8de890034a2e98c35a7)
+        ;
+
+        
+    
+    
+            var circle_156aa10b1f3425587ea58caea0445b80 = L.circle(
+                [34.2445, -118.6148],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 187.88, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_794a163a64cb84af44a7511b7a69e2e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aed0f921f56c7d9929021373cd537aa1 = $(`<div id="html_aed0f921f56c7d9929021373cd537aa1" style="width: 100.0%; height: 100.0%;">Area: Devonshire<br>Age Group: Senior<br>Incidents: 9394</div>`)[0];
+                popup_794a163a64cb84af44a7511b7a69e2e1.setContent(html_aed0f921f56c7d9929021373cd537aa1);
+            
+        
+
+        circle_156aa10b1f3425587ea58caea0445b80.bindPopup(popup_794a163a64cb84af44a7511b7a69e2e1)
+        ;
+
+        
+    
+    
+            var circle_6ec1c7a6f2d66d46dca692dffa51bbe6 = L.circle(
+                [33.9708, -118.2783],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 171.22, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_a31a1538152ffd67cfbb2e431bd625a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80a9e6c4417337ec645d4d418a5b74d7 = $(`<div id="html_80a9e6c4417337ec645d4d418a5b74d7" style="width: 100.0%; height: 100.0%;">Area: 77th Street<br>Age Group: Senior<br>Incidents: 8561</div>`)[0];
+                popup_a31a1538152ffd67cfbb2e431bd625a2.setContent(html_80a9e6c4417337ec645d4d418a5b74d7);
+            
+        
+
+        circle_6ec1c7a6f2d66d46dca692dffa51bbe6.bindPopup(popup_a31a1538152ffd67cfbb2e431bd625a2)
+        ;
+
+        
+    
+    
+            var circle_623ee5b33640dcca9fd96dafd8cc18bc = L.circle(
+                [34.0327, -118.3054],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 170.42000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_f9e47661d75660c91761b9242691a97b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_118e94b4f3fdfb17286fb2518c8dac8e = $(`<div id="html_118e94b4f3fdfb17286fb2518c8dac8e" style="width: 100.0%; height: 100.0%;">Area: Southwest<br>Age Group: Senior<br>Incidents: 8521</div>`)[0];
+                popup_f9e47661d75660c91761b9242691a97b.setContent(html_118e94b4f3fdfb17286fb2518c8dac8e);
+            
+        
+
+        circle_623ee5b33640dcca9fd96dafd8cc18bc.bindPopup(popup_f9e47661d75660c91761b9242691a97b)
+        ;
+
+        
+    
+    
+            var circle_a4181bbdb363654301948b433493188e = L.circle(
+                [34.2009, -118.6369],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 166.70000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_e41aa1edc5d790e60042380a38a2eb88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b13da0901887ad4a29cfe88a675fd44 = $(`<div id="html_7b13da0901887ad4a29cfe88a675fd44" style="width: 100.0%; height: 100.0%;">Area: Topanga<br>Age Group: Senior<br>Incidents: 8335</div>`)[0];
+                popup_e41aa1edc5d790e60042380a38a2eb88.setContent(html_7b13da0901887ad4a29cfe88a675fd44);
+            
+        
+
+        circle_a4181bbdb363654301948b433493188e.bindPopup(popup_e41aa1edc5d790e60042380a38a2eb88)
+        ;
+
+        
+    
+    
+            var circle_0ceb8f70ee6918fc625157e5c3899455 = L.circle(
+                [33.9926, -118.4744],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 164.4, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_1af320c89df8ef5ef022da486e1f836d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a302e40deb5235a912993baedf2a8ca8 = $(`<div id="html_a302e40deb5235a912993baedf2a8ca8" style="width: 100.0%; height: 100.0%;">Area: Pacific<br>Age Group: Senior<br>Incidents: 8220</div>`)[0];
+                popup_1af320c89df8ef5ef022da486e1f836d.setContent(html_a302e40deb5235a912993baedf2a8ca8);
+            
+        
+
+        circle_0ceb8f70ee6918fc625157e5c3899455.bindPopup(popup_1af320c89df8ef5ef022da486e1f836d)
+        ;
+
+        
+    
+    
+            var circle_a1b258913b70bf19e30961535919bf8f = L.circle(
+                [34.1724, -118.5407],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 162.76, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_708b6c5db93e4ef9f5274b6028adb62a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b495342ed94ac49dc85900e075873b5 = $(`<div id="html_8b495342ed94ac49dc85900e075873b5" style="width: 100.0%; height: 100.0%;">Area: West Valley<br>Age Group: Senior<br>Incidents: 8138</div>`)[0];
+                popup_708b6c5db93e4ef9f5274b6028adb62a.setContent(html_8b495342ed94ac49dc85900e075873b5);
+            
+        
+
+        circle_a1b258913b70bf19e30961535919bf8f.bindPopup(popup_708b6c5db93e4ef9f5274b6028adb62a)
+        ;
+
+        
+    
+    
+            var circle_c0d9604c022a4e7b42d1b34e02649130 = L.circle(
+                [34.2134, -118.4246],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 151.8, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_0b704a6a6440bec1bf4cbc0177519b15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f34facb7f46849d313cc4e0393a0639 = $(`<div id="html_8f34facb7f46849d313cc4e0393a0639" style="width: 100.0%; height: 100.0%;">Area: N Hollywood<br>Age Group: Senior<br>Incidents: 7590</div>`)[0];
+                popup_0b704a6a6440bec1bf4cbc0177519b15.setContent(html_8f34facb7f46849d313cc4e0393a0639);
+            
+        
+
+        circle_c0d9604c022a4e7b42d1b34e02649130.bindPopup(popup_0b704a6a6440bec1bf4cbc0177519b15)
+        ;
+
+        
+    
+    
+            var circle_058dc64bd92a52f69d2d3e73cfe5b526 = L.circle(
+                [34.1007, -118.2602],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 143.76, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_6f22b20ba457ba0e6c24792bb0c5ed63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f457ef065a3c30cc3a4376d73bea9f75 = $(`<div id="html_f457ef065a3c30cc3a4376d73bea9f75" style="width: 100.0%; height: 100.0%;">Area: Northeast<br>Age Group: Senior<br>Incidents: 7188</div>`)[0];
+                popup_6f22b20ba457ba0e6c24792bb0c5ed63.setContent(html_f457ef065a3c30cc3a4376d73bea9f75);
+            
+        
+
+        circle_058dc64bd92a52f69d2d3e73cfe5b526.bindPopup(popup_6f22b20ba457ba0e6c24792bb0c5ed63)
+        ;
+
+        
+    
+    
+            var circle_805b3b86d05288310dafe946e47775be = L.circle(
+                [34.1522, -118.4203],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 137.02, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_1ae56a487bb97279ab0706a8b6a519ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d6e52648b5eb3949c256577b98b6f5b = $(`<div id="html_7d6e52648b5eb3949c256577b98b6f5b" style="width: 100.0%; height: 100.0%;">Area: Van Nuys<br>Age Group: Senior<br>Incidents: 6851</div>`)[0];
+                popup_1ae56a487bb97279ab0706a8b6a519ed.setContent(html_7d6e52648b5eb3949c256577b98b6f5b);
+            
+        
+
+        circle_805b3b86d05288310dafe946e47775be.bindPopup(popup_1ae56a487bb97279ab0706a8b6a519ed)
+        ;
+
+        
+    
+    
+            var circle_6e96a00dda6a456da61199b000b5cb6d = L.circle(
+                [33.7874, -118.2507],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 133.34, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_4c4ca4eba80c614f2fe923e14b84d297 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07f08867e166662b41eb20db468cba5a = $(`<div id="html_07f08867e166662b41eb20db468cba5a" style="width: 100.0%; height: 100.0%;">Area: Harbor<br>Age Group: Senior<br>Incidents: 6667</div>`)[0];
+                popup_4c4ca4eba80c614f2fe923e14b84d297.setContent(html_07f08867e166662b41eb20db468cba5a);
+            
+        
+
+        circle_6e96a00dda6a456da61199b000b5cb6d.bindPopup(popup_4c4ca4eba80c614f2fe923e14b84d297)
+        ;
+
+        
+    
+    
+            var circle_e6534c80bdf1518b47072763f7cd81de = L.circle(
+                [33.977, -118.2937],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 127.34, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_2ee17bd7d6c0926c4ab8f3ec00aaea43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f51e23bc8081b966ad968d1cbd73cb4 = $(`<div id="html_9f51e23bc8081b966ad968d1cbd73cb4" style="width: 100.0%; height: 100.0%;">Area: 77th Street<br>Age Group: Teenager<br>Incidents: 6367</div>`)[0];
+                popup_2ee17bd7d6c0926c4ab8f3ec00aaea43.setContent(html_9f51e23bc8081b966ad968d1cbd73cb4);
+            
+        
+
+        circle_e6534c80bdf1518b47072763f7cd81de.bindPopup(popup_2ee17bd7d6c0926c4ab8f3ec00aaea43)
+        ;
+
+        
+    
+    
+            var circle_617e643fc4b2c934d14a0afc81593fc2 = L.circle(
+                [34.074, -118.3328],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 126.34, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_f03c6877eb2a5cd39c2c07a137fab5a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec2edc49c113cc2b58778576f073d5d5 = $(`<div id="html_ec2edc49c113cc2b58778576f073d5d5" style="width: 100.0%; height: 100.0%;">Area: Wilshire<br>Age Group: Senior<br>Incidents: 6317</div>`)[0];
+                popup_f03c6877eb2a5cd39c2c07a137fab5a9.setContent(html_ec2edc49c113cc2b58778576f073d5d5);
+            
+        
+
+        circle_617e643fc4b2c934d14a0afc81593fc2.bindPopup(popup_f03c6877eb2a5cd39c2c07a137fab5a9)
+        ;
+
+        
+    
+    
+            var circle_b002f3eb03009288c7174e7be4498458 = L.circle(
+                [34.17, -118.3703],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 115.74000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_55866d1ce8e82dffce5e9e26abd1e213 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f787a8b06068de0a5278208215ec6ad = $(`<div id="html_1f787a8b06068de0a5278208215ec6ad" style="width: 100.0%; height: 100.0%;">Area: N Hollywood<br>Age Group: Teenager<br>Incidents: 5787</div>`)[0];
+                popup_55866d1ce8e82dffce5e9e26abd1e213.setContent(html_1f787a8b06068de0a5278208215ec6ad);
+            
+        
+
+        circle_b002f3eb03009288c7174e7be4498458.bindPopup(popup_55866d1ce8e82dffce5e9e26abd1e213)
+        ;
+
+        
+    
+    
+            var circle_4125d729dbd1cdd9488fde50e6fd7beb = L.circle(
+                [34.2776, -118.4361],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 113.8, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_b40b42b376536770ba3ed88453fa8db3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_878bf0eb9c545faef03d9250e505b35b = $(`<div id="html_878bf0eb9c545faef03d9250e505b35b" style="width: 100.0%; height: 100.0%;">Area: Mission<br>Age Group: Senior<br>Incidents: 5690</div>`)[0];
+                popup_b40b42b376536770ba3ed88453fa8db3.setContent(html_878bf0eb9c545faef03d9250e505b35b);
+            
+        
+
+        circle_4125d729dbd1cdd9488fde50e6fd7beb.bindPopup(popup_b40b42b376536770ba3ed88453fa8db3)
+        ;
+
+        
+    
+    
+            var circle_8095fa5ff8114abe7ada0e2d3150604a = L.circle(
+                [33.9532, -118.2564],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 109.26, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_3ee4d888171953d244704ce8cae3c267 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fea40bb996016e22d678767839a21ab1 = $(`<div id="html_fea40bb996016e22d678767839a21ab1" style="width: 100.0%; height: 100.0%;">Area: Southeast<br>Age Group: Senior<br>Incidents: 5463</div>`)[0];
+                popup_3ee4d888171953d244704ce8cae3c267.setContent(html_fea40bb996016e22d678767839a21ab1);
+            
+        
+
+        circle_8095fa5ff8114abe7ada0e2d3150604a.bindPopup(popup_3ee4d888171953d244704ce8cae3c267)
+        ;
+
+        
+    
+    
+            var circle_d87804a710dfc1bc31b721c744cbff02 = L.circle(
+                [34.0746, -118.2966],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 104.96000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_ecc5578bde083c8e4a9841451e3dcc0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0f4197b242cdcac0642191af992a8c9 = $(`<div id="html_a0f4197b242cdcac0642191af992a8c9" style="width: 100.0%; height: 100.0%;">Area: Olympic<br>Age Group: Senior<br>Incidents: 5248</div>`)[0];
+                popup_ecc5578bde083c8e4a9841451e3dcc0c.setContent(html_a0f4197b242cdcac0642191af992a8c9);
+            
+        
+
+        circle_d87804a710dfc1bc31b721c744cbff02.bindPopup(popup_ecc5578bde083c8e4a9841451e3dcc0c)
+        ;
+
+        
+    
+    
+            var circle_cee2939a92743990776d3d646ed36ea5 = L.circle(
+                [34.2465, -118.2761],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 104.18, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_5aacde69c5413ae188428fc4e22f5f01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54bf8160aea74a8b1b8592dc52b105fe = $(`<div id="html_54bf8160aea74a8b1b8592dc52b105fe" style="width: 100.0%; height: 100.0%;">Area: Foothill<br>Age Group: Senior<br>Incidents: 5209</div>`)[0];
+                popup_5aacde69c5413ae188428fc4e22f5f01.setContent(html_54bf8160aea74a8b1b8592dc52b105fe);
+            
+        
+
+        circle_cee2939a92743990776d3d646ed36ea5.bindPopup(popup_5aacde69c5413ae188428fc4e22f5f01)
+        ;
+
+        
+    
+    
+            var circle_a21e5570f5fddd09f6efbc8b3e904490 = L.circle(
+                [34.0467, -118.2427],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 101.36, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_834de61bc186690acaaf3a90db9ce46f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d87beef7145a576e2290730a3c422ae = $(`<div id="html_8d87beef7145a576e2290730a3c422ae" style="width: 100.0%; height: 100.0%;">Area: Central<br>Age Group: Senior<br>Incidents: 5068</div>`)[0];
+                popup_834de61bc186690acaaf3a90db9ce46f.setContent(html_8d87beef7145a576e2290730a3c422ae);
+            
+        
+
+        circle_a21e5570f5fddd09f6efbc8b3e904490.bindPopup(popup_834de61bc186690acaaf3a90db9ce46f)
+        ;
+
+        
+    
+    
+            var circle_bc50ca76b0b907874447e4b4f7217a91 = L.circle(
+                [34.0183, -118.3504],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 94.44, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_e739375f2f2fc91f01f26db7094dc99f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42fd368715a5a4399e2eb6b4aa7a37b7 = $(`<div id="html_42fd368715a5a4399e2eb6b4aa7a37b7" style="width: 100.0%; height: 100.0%;">Area: Southwest<br>Age Group: Teenager<br>Incidents: 4722</div>`)[0];
+                popup_e739375f2f2fc91f01f26db7094dc99f.setContent(html_42fd368715a5a4399e2eb6b4aa7a37b7);
+            
+        
+
+        circle_bc50ca76b0b907874447e4b4f7217a91.bindPopup(popup_e739375f2f2fc91f01f26db7094dc99f)
+        ;
+
+        
+    
+    
+            var circle_e990807d38372f90ff2807b49f4937bf = L.circle(
+                [34.2268, -118.4499],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 93.56, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_63a2c7670d4296b854b5931069ae8c56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1551c9688afd7928ee131e024265b8a = $(`<div id="html_e1551c9688afd7928ee131e024265b8a" style="width: 100.0%; height: 100.0%;">Area: Mission<br>Age Group: Teenager<br>Incidents: 4678</div>`)[0];
+                popup_63a2c7670d4296b854b5931069ae8c56.setContent(html_e1551c9688afd7928ee131e024265b8a);
+            
+        
+
+        circle_e990807d38372f90ff2807b49f4937bf.bindPopup(popup_63a2c7670d4296b854b5931069ae8c56)
+        ;
+
+        
+    
+    
+            var circle_bb2cc40d13c105c9908681237e57ecc7 = L.circle(
+                [33.9494, -118.243],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 92.66, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_d4dad4d1eb680df1e532e8fb89331d5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a60a68efd2521586108b1866af2148b8 = $(`<div id="html_a60a68efd2521586108b1866af2148b8" style="width: 100.0%; height: 100.0%;">Area: Southeast<br>Age Group: Teenager<br>Incidents: 4633</div>`)[0];
+                popup_d4dad4d1eb680df1e532e8fb89331d5b.setContent(html_a60a68efd2521586108b1866af2148b8);
+            
+        
+
+        circle_bb2cc40d13c105c9908681237e57ecc7.bindPopup(popup_d4dad4d1eb680df1e532e8fb89331d5b)
+        ;
+
+        
+    
+    
+            var circle_ce07945db034981e2232f69a2f90d27c = L.circle(
+                [34.0885, -118.3114],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 90.28, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_4a2c25a2c9e6db04da256de6a31417a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12511c618d116aba4e1e70f7db5dbd7a = $(`<div id="html_12511c618d116aba4e1e70f7db5dbd7a" style="width: 100.0%; height: 100.0%;">Area: Hollywood<br>Age Group: Senior<br>Incidents: 4514</div>`)[0];
+                popup_4a2c25a2c9e6db04da256de6a31417a7.setContent(html_12511c618d116aba4e1e70f7db5dbd7a);
+            
+        
+
+        circle_ce07945db034981e2232f69a2f90d27c.bindPopup(popup_4a2c25a2c9e6db04da256de6a31417a7)
+        ;
+
+        
+    
+    
+            var circle_d4f8164e01e5c8ffcd940d806bf7ec04 = L.circle(
+                [34.0619, -118.2702],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 89.24, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_5af9c2e639c39ff2fd6bb5fea8dcc7e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b2f4cbc99d7e7a2110f7951518ce276 = $(`<div id="html_3b2f4cbc99d7e7a2110f7951518ce276" style="width: 100.0%; height: 100.0%;">Area: Rampart<br>Age Group: Senior<br>Incidents: 4462</div>`)[0];
+                popup_5af9c2e639c39ff2fd6bb5fea8dcc7e0.setContent(html_3b2f4cbc99d7e7a2110f7951518ce276);
+            
+        
+
+        circle_d4f8164e01e5c8ffcd940d806bf7ec04.bindPopup(popup_5af9c2e639c39ff2fd6bb5fea8dcc7e0)
+        ;
+
+        
+    
+    
+            var circle_0cb72420d96a8b1b3a753dd3f169a274 = L.circle(
+                [34.0223, -118.2718],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 87.5, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_2fa54cf41b1472c9fc555bdbf9df1649 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc3b1d861989ae46501ccb303ab3c308 = $(`<div id="html_cc3b1d861989ae46501ccb303ab3c308" style="width: 100.0%; height: 100.0%;">Area: Newton<br>Age Group: Teenager<br>Incidents: 4375</div>`)[0];
+                popup_2fa54cf41b1472c9fc555bdbf9df1649.setContent(html_cc3b1d861989ae46501ccb303ab3c308);
+            
+        
+
+        circle_0cb72420d96a8b1b3a753dd3f169a274.bindPopup(popup_2fa54cf41b1472c9fc555bdbf9df1649)
+        ;
+
+        
+    
+    
+            var circle_5e314cb5fa71ffaad3a602aa8c7870ea = L.circle(
+                [33.7442, -118.2813],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80.76, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_5ce66dc16429d973e85d157477bb9b1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d0e4d902201ecc6d116db5d2faf110b = $(`<div id="html_5d0e4d902201ecc6d116db5d2faf110b" style="width: 100.0%; height: 100.0%;">Area: Harbor<br>Age Group: Teenager<br>Incidents: 4038</div>`)[0];
+                popup_5ce66dc16429d973e85d157477bb9b1e.setContent(html_5d0e4d902201ecc6d116db5d2faf110b);
+            
+        
+
+        circle_5e314cb5fa71ffaad3a602aa8c7870ea.bindPopup(popup_5ce66dc16429d973e85d157477bb9b1e)
+        ;
+
+        
+    
+    
+            var circle_d4906b9bfdc8dc569ef10eb08a44841a = L.circle(
+                [34.0606, -118.2144],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 77.72, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_2df430ad1c613e47c4b4670864525ace = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90476944244071da0f0ae667a772bd37 = $(`<div id="html_90476944244071da0f0ae667a772bd37" style="width: 100.0%; height: 100.0%;">Area: Hollenbeck<br>Age Group: Senior<br>Incidents: 3886</div>`)[0];
+                popup_2df430ad1c613e47c4b4670864525ace.setContent(html_90476944244071da0f0ae667a772bd37);
+            
+        
+
+        circle_d4906b9bfdc8dc569ef10eb08a44841a.bindPopup(popup_2df430ad1c613e47c4b4670864525ace)
+        ;
+
+        
+    
+    
+            var circle_124564c656639d345c3393c2d39461c0 = L.circle(
+                [34.0277, -118.2574],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 72.76, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_4afc2ff7919450ab63c25caf1ed7ae21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08ca6c3bcbbeb42dc19fc9bdda3c74d2 = $(`<div id="html_08ca6c3bcbbeb42dc19fc9bdda3c74d2" style="width: 100.0%; height: 100.0%;">Area: Newton<br>Age Group: Senior<br>Incidents: 3638</div>`)[0];
+                popup_4afc2ff7919450ab63c25caf1ed7ae21.setContent(html_08ca6c3bcbbeb42dc19fc9bdda3c74d2);
+            
+        
+
+        circle_124564c656639d345c3393c2d39461c0.bindPopup(popup_4afc2ff7919450ab63c25caf1ed7ae21)
+        ;
+
+        
+    
+    
+            var circle_7799f2ac8b4b6026233dbe872a97bad7 = L.circle(
+                [34.0563, -118.281],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 69.88, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_7c98eb544a4ac3a7facf1d7dcb3127e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2198f0217a23d12d2beb1c280f51c4b0 = $(`<div id="html_2198f0217a23d12d2beb1c280f51c4b0" style="width: 100.0%; height: 100.0%;">Area: Rampart<br>Age Group: Teenager<br>Incidents: 3494</div>`)[0];
+                popup_7c98eb544a4ac3a7facf1d7dcb3127e8.setContent(html_2198f0217a23d12d2beb1c280f51c4b0);
+            
+        
+
+        circle_7799f2ac8b4b6026233dbe872a97bad7.bindPopup(popup_7c98eb544a4ac3a7facf1d7dcb3127e8)
+        ;
+
+        
+    
+    
+            var circle_5a17d2c0e6a4e4bb7b941bb96e68b6e2 = L.circle(
+                [34.2012, -118.416],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 64.58, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_2094bd7c150c175cfb103d3dfbd391e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af18c9a70cb5b4c6061d6f5cc8e9188b = $(`<div id="html_af18c9a70cb5b4c6061d6f5cc8e9188b" style="width: 100.0%; height: 100.0%;">Area: N Hollywood<br>Age Group: Child<br>Incidents: 3229</div>`)[0];
+                popup_2094bd7c150c175cfb103d3dfbd391e1.setContent(html_af18c9a70cb5b4c6061d6f5cc8e9188b);
+            
+        
+
+        circle_5a17d2c0e6a4e4bb7b941bb96e68b6e2.bindPopup(popup_2094bd7c150c175cfb103d3dfbd391e1)
+        ;
+
+        
+    
+    
+            var circle_23b99e5cc51cd61f3f4b169497fa68fc = L.circle(
+                [34.0213, -118.2019],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 57.800000000000004, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_50b25f1d4047058a6b8ba724484812ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a26fdbf5add1c98ddb6a70100730f571 = $(`<div id="html_a26fdbf5add1c98ddb6a70100730f571" style="width: 100.0%; height: 100.0%;">Area: Hollenbeck<br>Age Group: Teenager<br>Incidents: 2890</div>`)[0];
+                popup_50b25f1d4047058a6b8ba724484812ee.setContent(html_a26fdbf5add1c98ddb6a70100730f571);
+            
+        
+
+        circle_23b99e5cc51cd61f3f4b169497fa68fc.bindPopup(popup_50b25f1d4047058a6b8ba724484812ee)
+        ;
+
+        
+    
+    
+            var circle_1e57d97b46d1376e936681b81c022e19 = L.circle(
+                [34.0447, -118.3538],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 55.2, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_9e0976b073f602289ce841a71a67dbe3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f8252c655dccc44970d56a908141e3d = $(`<div id="html_4f8252c655dccc44970d56a908141e3d" style="width: 100.0%; height: 100.0%;">Area: Wilshire<br>Age Group: Teenager<br>Incidents: 2760</div>`)[0];
+                popup_9e0976b073f602289ce841a71a67dbe3.setContent(html_4f8252c655dccc44970d56a908141e3d);
+            
+        
+
+        circle_1e57d97b46d1376e936681b81c022e19.bindPopup(popup_9e0976b073f602289ce841a71a67dbe3)
+        ;
+
+        
+    
+    
+            var circle_6105776bdda75c72ce3a07c5422cc225 = L.circle(
+                [34.2321, -118.3964],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 51.120000000000005, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_ecdde4191fef50aed2c591893f64d422 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_386a6866a2b3cc838c8d84aeaec8fac7 = $(`<div id="html_386a6866a2b3cc838c8d84aeaec8fac7" style="width: 100.0%; height: 100.0%;">Area: Foothill<br>Age Group: Teenager<br>Incidents: 2556</div>`)[0];
+                popup_ecdde4191fef50aed2c591893f64d422.setContent(html_386a6866a2b3cc838c8d84aeaec8fac7);
+            
+        
+
+        circle_6105776bdda75c72ce3a07c5422cc225.bindPopup(popup_ecdde4191fef50aed2c591893f64d422)
+        ;
+
+        
+    
+    
+            var circle_4c087772760f900ce5e6159718057523 = L.circle(
+                [34.1235, -118.2685],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 48.22, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_aea3422f71b910b91796da29922babc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e72c4fa78aac7fbf5ab6956912a737c5 = $(`<div id="html_e72c4fa78aac7fbf5ab6956912a737c5" style="width: 100.0%; height: 100.0%;">Area: Northeast<br>Age Group: Teenager<br>Incidents: 2411</div>`)[0];
+                popup_aea3422f71b910b91796da29922babc4.setContent(html_e72c4fa78aac7fbf5ab6956912a737c5);
+            
+        
+
+        circle_4c087772760f900ce5e6159718057523.bindPopup(popup_aea3422f71b910b91796da29922babc4)
+        ;
+
+        
+    
+    
+            var circle_fb5ad17e59d8abb200b586bcfd1ca614 = L.circle(
+                [34.2648, -118.4979],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 47.76, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_6913f6fd7450e93d0b3c870a567b1bb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7377644f9154644a9a33427e0341f7fd = $(`<div id="html_7377644f9154644a9a33427e0341f7fd" style="width: 100.0%; height: 100.0%;">Area: Devonshire<br>Age Group: Teenager<br>Incidents: 2388</div>`)[0];
+                popup_6913f6fd7450e93d0b3c870a567b1bb8.setContent(html_7377644f9154644a9a33427e0341f7fd);
+            
+        
+
+        circle_fb5ad17e59d8abb200b586bcfd1ca614.bindPopup(popup_6913f6fd7450e93d0b3c870a567b1bb8)
+        ;
+
+        
+    
+    
+            var circle_16d5aea06abad764151481064e33f40f = L.circle(
+                [34.0793, -118.3113],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 44.300000000000004, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_8ea41ffc9dd90e1e42352d94c5107c4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78d1a9688c99ee420228f6b717a639d1 = $(`<div id="html_78d1a9688c99ee420228f6b717a639d1" style="width: 100.0%; height: 100.0%;">Area: Olympic<br>Age Group: Teenager<br>Incidents: 2215</div>`)[0];
+                popup_8ea41ffc9dd90e1e42352d94c5107c4c.setContent(html_78d1a9688c99ee420228f6b717a639d1);
+            
+        
+
+        circle_16d5aea06abad764151481064e33f40f.bindPopup(popup_8ea41ffc9dd90e1e42352d94c5107c4c)
+        ;
+
+        
+    
+    
+            var circle_5b0461e6368ad00a83dbb9ac1bd39e66 = L.circle(
+                [33.7379, -118.2923],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 43.12, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_bad4a1636d3f1a77cdaae8c78a2576e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df1c2f4cfb7662746f51e3d58a7d0917 = $(`<div id="html_df1c2f4cfb7662746f51e3d58a7d0917" style="width: 100.0%; height: 100.0%;">Area: Harbor<br>Age Group: Child<br>Incidents: 2156</div>`)[0];
+                popup_bad4a1636d3f1a77cdaae8c78a2576e5.setContent(html_df1c2f4cfb7662746f51e3d58a7d0917);
+            
+        
+
+        circle_5b0461e6368ad00a83dbb9ac1bd39e66.bindPopup(popup_bad4a1636d3f1a77cdaae8c78a2576e5)
+        ;
+
+        
+    
+    
+            var circle_a13eda8ce71700b5e54b1abbff7da24f = L.circle(
+                [34.212, -118.5754],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 42.86, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_e4b57a86a164b944741b1b94893c242c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66bf622512a9935624639895213b10f3 = $(`<div id="html_66bf622512a9935624639895213b10f3" style="width: 100.0%; height: 100.0%;">Area: Topanga<br>Age Group: Teenager<br>Incidents: 2143</div>`)[0];
+                popup_e4b57a86a164b944741b1b94893c242c.setContent(html_66bf622512a9935624639895213b10f3);
+            
+        
+
+        circle_a13eda8ce71700b5e54b1abbff7da24f.bindPopup(popup_e4b57a86a164b944741b1b94893c242c)
+        ;
+
+        
+    
+    
+            var circle_a274cea9bed90b04c832605373778745 = L.circle(
+                [34.1939, -118.4531],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 42.6, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_b580a60a855ff5cb1a25544ddcc0c650 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74b7aa5f63ac1cd5ec8ae02cd676ef2d = $(`<div id="html_74b7aa5f63ac1cd5ec8ae02cd676ef2d" style="width: 100.0%; height: 100.0%;">Area: Van Nuys<br>Age Group: Teenager<br>Incidents: 2130</div>`)[0];
+                popup_b580a60a855ff5cb1a25544ddcc0c650.setContent(html_74b7aa5f63ac1cd5ec8ae02cd676ef2d);
+            
+        
+
+        circle_a274cea9bed90b04c832605373778745.bindPopup(popup_b580a60a855ff5cb1a25544ddcc0c650)
+        ;
+
+        
+    
+    
+            var circle_af00451c57b28fc3df41b9859589a79f = L.circle(
+                [33.9891, -118.3216],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 40.64, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_8a247a8baa2572c7244cb63c1121fb36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18eebc8e27c7b1ec6103137205bcd00f = $(`<div id="html_18eebc8e27c7b1ec6103137205bcd00f" style="width: 100.0%; height: 100.0%;">Area: 77th Street<br>Age Group: Child<br>Incidents: 2032</div>`)[0];
+                popup_8a247a8baa2572c7244cb63c1121fb36.setContent(html_18eebc8e27c7b1ec6103137205bcd00f);
+            
+        
+
+        circle_af00451c57b28fc3df41b9859589a79f.bindPopup(popup_8a247a8baa2572c7244cb63c1121fb36)
+        ;
+
+        
+    
+    
+            var circle_a0290b3a6bc925821eaa6891c6d73244 = L.circle(
+                [34.2196, -118.4319],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38.54, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_332e21610dd2cbe7465add901040acc1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d17163bf5b0d16d6db857960df1b092 = $(`<div id="html_1d17163bf5b0d16d6db857960df1b092" style="width: 100.0%; height: 100.0%;">Area: Mission<br>Age Group: Child<br>Incidents: 1927</div>`)[0];
+                popup_332e21610dd2cbe7465add901040acc1.setContent(html_1d17163bf5b0d16d6db857960df1b092);
+            
+        
+
+        circle_a0290b3a6bc925821eaa6891c6d73244.bindPopup(popup_332e21610dd2cbe7465add901040acc1)
+        ;
+
+        
+    
+    
+            var circle_e12d236b21da8a3672496e2dc550a019 = L.circle(
+                [34.1839, -118.5273],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35.800000000000004, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_192802b05fd9d797878f3c0c48105661 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f129acbb2a401d80cb46771a2af2923b = $(`<div id="html_f129acbb2a401d80cb46771a2af2923b" style="width: 100.0%; height: 100.0%;">Area: West Valley<br>Age Group: Teenager<br>Incidents: 1790</div>`)[0];
+                popup_192802b05fd9d797878f3c0c48105661.setContent(html_f129acbb2a401d80cb46771a2af2923b);
+            
+        
+
+        circle_e12d236b21da8a3672496e2dc550a019.bindPopup(popup_192802b05fd9d797878f3c0c48105661)
+        ;
+
+        
+    
+    
+            var circle_b59e7211c427a37bca9861f59259858c = L.circle(
+                [33.9851, -118.2783],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.92, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_95454e500b3f74a890f5bed9dced5789 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2aecf0b09615f8c33c856d3daad15064 = $(`<div id="html_2aecf0b09615f8c33c856d3daad15064" style="width: 100.0%; height: 100.0%;">Area: Newton<br>Age Group: Child<br>Incidents: 1646</div>`)[0];
+                popup_95454e500b3f74a890f5bed9dced5789.setContent(html_2aecf0b09615f8c33c856d3daad15064);
+            
+        
+
+        circle_b59e7211c427a37bca9861f59259858c.bindPopup(popup_95454e500b3f74a890f5bed9dced5789)
+        ;
+
+        
+    
+    
+            var circle_5dd7019700d6c9e7e2a0fc02e7385d3c = L.circle(
+                [34.0249, -118.4074],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.84, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_f386edf9c7ab14a9c65ef5c505a604b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea47f5661ab26430a4b116152b189e9e = $(`<div id="html_ea47f5661ab26430a4b116152b189e9e" style="width: 100.0%; height: 100.0%;">Area: Pacific<br>Age Group: Teenager<br>Incidents: 1642</div>`)[0];
+                popup_f386edf9c7ab14a9c65ef5c505a604b5.setContent(html_ea47f5661ab26430a4b116152b189e9e);
+            
+        
+
+        circle_5dd7019700d6c9e7e2a0fc02e7385d3c.bindPopup(popup_f386edf9c7ab14a9c65ef5c505a604b5)
+        ;
+
+        
+    
+    
+            var circle_985c7f237133b208dd545f80da56598c = L.circle(
+                [34.0565, -118.2768],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.82, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_e4e7813ceabe7819cf789689ffa15e7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef551b7aa0c534701cd187a150dcfd15 = $(`<div id="html_ef551b7aa0c534701cd187a150dcfd15" style="width: 100.0%; height: 100.0%;">Area: Rampart<br>Age Group: Child<br>Incidents: 1641</div>`)[0];
+                popup_e4e7813ceabe7819cf789689ffa15e7b.setContent(html_ef551b7aa0c534701cd187a150dcfd15);
+            
+        
+
+        circle_985c7f237133b208dd545f80da56598c.bindPopup(popup_e4e7813ceabe7819cf789689ffa15e7b)
+        ;
+
+        
+    
+    
+            var circle_753a3ac8c3ad3009215443d51816d862 = L.circle(
+                [34.0121, -118.2981],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31.240000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_c2d2f7eed5ed9e6e40195965d0cc09d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0633d85bb5d7cc958e05d8f07f87fe3 = $(`<div id="html_f0633d85bb5d7cc958e05d8f07f87fe3" style="width: 100.0%; height: 100.0%;">Area: Southwest<br>Age Group: Child<br>Incidents: 1562</div>`)[0];
+                popup_c2d2f7eed5ed9e6e40195965d0cc09d4.setContent(html_f0633d85bb5d7cc958e05d8f07f87fe3);
+            
+        
+
+        circle_753a3ac8c3ad3009215443d51816d862.bindPopup(popup_c2d2f7eed5ed9e6e40195965d0cc09d4)
+        ;
+
+        
+    
+    
+            var circle_267f895a6353b804fad8335e6fcbd6a3 = L.circle(
+                [34.0352, -118.3869],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31.04, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_5e4a01cc7d750bb3396c32e55b369aa4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d64a43db938745eeac9c42c007e38eab = $(`<div id="html_d64a43db938745eeac9c42c007e38eab" style="width: 100.0%; height: 100.0%;">Area: West LA<br>Age Group: Teenager<br>Incidents: 1552</div>`)[0];
+                popup_5e4a01cc7d750bb3396c32e55b369aa4.setContent(html_d64a43db938745eeac9c42c007e38eab);
+            
+        
+
+        circle_267f895a6353b804fad8335e6fcbd6a3.bindPopup(popup_5e4a01cc7d750bb3396c32e55b369aa4)
+        ;
+
+        
+    
+    
+            var circle_434634a39725df70abecf8a9632327d1 = L.circle(
+                [34.25, -118.5536],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.04, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_ba195801e9a04218d46e88cdfe3bd694 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81cd89d39d78f6fd3b69ea88bb761a84 = $(`<div id="html_81cd89d39d78f6fd3b69ea88bb761a84" style="width: 100.0%; height: 100.0%;">Area: Devonshire<br>Age Group: Child<br>Incidents: 1452</div>`)[0];
+                popup_ba195801e9a04218d46e88cdfe3bd694.setContent(html_81cd89d39d78f6fd3b69ea88bb761a84);
+            
+        
+
+        circle_434634a39725df70abecf8a9632327d1.bindPopup(popup_ba195801e9a04218d46e88cdfe3bd694)
+        ;
+
+        
+    
+    
+            var circle_12ffcc024232ad9dfff75cc3e009c301 = L.circle(
+                [34.0871, -118.3363],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.46, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_11f0e596a362eccb95045b076a251dbf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cd5052e9c5d91aac0c6223daa78d8d2 = $(`<div id="html_9cd5052e9c5d91aac0c6223daa78d8d2" style="width: 100.0%; height: 100.0%;">Area: Hollywood<br>Age Group: Teenager<br>Incidents: 1323</div>`)[0];
+                popup_11f0e596a362eccb95045b076a251dbf.setContent(html_9cd5052e9c5d91aac0c6223daa78d8d2);
+            
+        
+
+        circle_12ffcc024232ad9dfff75cc3e009c301.bindPopup(popup_11f0e596a362eccb95045b076a251dbf)
+        ;
+
+        
+    
+    
+            var circle_2b4c639d211cd35c66b6eb757653efc6 = L.circle(
+                [34.0378, -118.2561],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.14, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_0450fad13b10f3576c1992e6021823c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b513e0120c5aff2c92a26a72fa2069e = $(`<div id="html_0b513e0120c5aff2c92a26a72fa2069e" style="width: 100.0%; height: 100.0%;">Area: Central<br>Age Group: Teenager<br>Incidents: 1107</div>`)[0];
+                popup_0450fad13b10f3576c1992e6021823c7.setContent(html_0b513e0120c5aff2c92a26a72fa2069e);
+            
+        
+
+        circle_2b4c639d211cd35c66b6eb757653efc6.bindPopup(popup_0450fad13b10f3576c1992e6021823c7)
+        ;
+
+        
+    
+    
+            var circle_35f169f1e70fb13af760654c2bbec74e = L.circle(
+                [33.9449, -118.2415],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.900000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_9b736dced3c5683deeebb7ecda243e05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e79d1d12c23a172ca1bd3f314230a21f = $(`<div id="html_e79d1d12c23a172ca1bd3f314230a21f" style="width: 100.0%; height: 100.0%;">Area: Southeast<br>Age Group: Child<br>Incidents: 1095</div>`)[0];
+                popup_9b736dced3c5683deeebb7ecda243e05.setContent(html_e79d1d12c23a172ca1bd3f314230a21f);
+            
+        
+
+        circle_35f169f1e70fb13af760654c2bbec74e.bindPopup(popup_9b736dced3c5683deeebb7ecda243e05)
+        ;
+
+        
+    
+    
+            var circle_3586b096ff75c1e59538f5bee6136b25 = L.circle(
+                [34.0867, -118.1768],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.36, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_67e330bdc2418df9c9ada678f9c994cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_531a542e21fe64e7ede1708a3bf8e1e6 = $(`<div id="html_531a542e21fe64e7ede1708a3bf8e1e6" style="width: 100.0%; height: 100.0%;">Area: Hollenbeck<br>Age Group: Child<br>Incidents: 918</div>`)[0];
+                popup_67e330bdc2418df9c9ada678f9c994cc.setContent(html_531a542e21fe64e7ede1708a3bf8e1e6);
+            
+        
+
+        circle_3586b096ff75c1e59538f5bee6136b25.bindPopup(popup_67e330bdc2418df9c9ada678f9c994cc)
+        ;
+
+        
+    
+    
+            var circle_1a6218050cb3e5f6237776f8a9092477 = L.circle(
+                [34.0429, -118.3641],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.84, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_38ace571386a32e122c0bda648daf01f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_496a530c7f69a71ec0ebbc2149e40e34 = $(`<div id="html_496a530c7f69a71ec0ebbc2149e40e34" style="width: 100.0%; height: 100.0%;">Area: Wilshire<br>Age Group: Child<br>Incidents: 742</div>`)[0];
+                popup_38ace571386a32e122c0bda648daf01f.setContent(html_496a530c7f69a71ec0ebbc2149e40e34);
+            
+        
+
+        circle_1a6218050cb3e5f6237776f8a9092477.bindPopup(popup_38ace571386a32e122c0bda648daf01f)
+        ;
+
+        
+    
+    
+            var circle_16d25f305b826f2fd79ee2513d553e5e = L.circle(
+                [34.2619, -118.3989],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.06, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_de9bc091ffde461c205cc0f19d96c0c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5666827405f260b2bfb8071a045251c2 = $(`<div id="html_5666827405f260b2bfb8071a045251c2" style="width: 100.0%; height: 100.0%;">Area: Foothill<br>Age Group: Child<br>Incidents: 703</div>`)[0];
+                popup_de9bc091ffde461c205cc0f19d96c0c9.setContent(html_5666827405f260b2bfb8071a045251c2);
+            
+        
+
+        circle_16d25f305b826f2fd79ee2513d553e5e.bindPopup(popup_de9bc091ffde461c205cc0f19d96c0c9)
+        ;
+
+        
+    
+    
+            var circle_ebe448c5460313953e3f041d84dace61 = L.circle(
+                [34.0704, -118.2917],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.24, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_1cb31eb18c1abe0ac17664a8fb5c2304 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f95077f03611333f58ee0d9e2829966e = $(`<div id="html_f95077f03611333f58ee0d9e2829966e" style="width: 100.0%; height: 100.0%;">Area: Olympic<br>Age Group: Child<br>Incidents: 662</div>`)[0];
+                popup_1cb31eb18c1abe0ac17664a8fb5c2304.setContent(html_f95077f03611333f58ee0d9e2829966e);
+            
+        
+
+        circle_ebe448c5460313953e3f041d84dace61.bindPopup(popup_1cb31eb18c1abe0ac17664a8fb5c2304)
+        ;
+
+        
+    
+    
+            var circle_b7a7c5c9471c79ff087bbe7abf0b1a65 = L.circle(
+                [34.1885, -118.4662],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.22, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_2cfb732c1dd5059e67f0c6f73bdc7186 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b9bc1408b5168ea20b6b034132d57fa = $(`<div id="html_6b9bc1408b5168ea20b6b034132d57fa" style="width: 100.0%; height: 100.0%;">Area: Van Nuys<br>Age Group: Child<br>Incidents: 611</div>`)[0];
+                popup_2cfb732c1dd5059e67f0c6f73bdc7186.setContent(html_6b9bc1408b5168ea20b6b034132d57fa);
+            
+        
+
+        circle_b7a7c5c9471c79ff087bbe7abf0b1a65.bindPopup(popup_2cfb732c1dd5059e67f0c6f73bdc7186)
+        ;
+
+        
+    
+    
+            var circle_c244c6003a3c9f383488315e9efc9417 = L.circle(
+                [34.0819, -118.2601],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.96, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_8c536604e01a5515642319eb0dd73bc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34ad91d8b5ab639afdd27c0a80c2adf1 = $(`<div id="html_34ad91d8b5ab639afdd27c0a80c2adf1" style="width: 100.0%; height: 100.0%;">Area: Northeast<br>Age Group: Child<br>Incidents: 498</div>`)[0];
+                popup_8c536604e01a5515642319eb0dd73bc7.setContent(html_34ad91d8b5ab639afdd27c0a80c2adf1);
+            
+        
+
+        circle_c244c6003a3c9f383488315e9efc9417.bindPopup(popup_8c536604e01a5515642319eb0dd73bc7)
+        ;
+
+        
+    
+    
+            var circle_0e7a28a7fd2b40093729fb6d8ac3ce02 = L.circle(
+                [34.1631, -118.5953],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.5, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_0883ee4690e8699543a218b7f37559eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b9b426addc0ba3b09ba7db71e8069f0 = $(`<div id="html_6b9b426addc0ba3b09ba7db71e8069f0" style="width: 100.0%; height: 100.0%;">Area: Topanga<br>Age Group: Child<br>Incidents: 475</div>`)[0];
+                popup_0883ee4690e8699543a218b7f37559eb.setContent(html_6b9b426addc0ba3b09ba7db71e8069f0);
+            
+        
+
+        circle_0e7a28a7fd2b40093729fb6d8ac3ce02.bindPopup(popup_0883ee4690e8699543a218b7f37559eb)
+        ;
+
+        
+    
+    
+            var circle_f238bbf2eed4385bda0c16c74f8db3df = L.circle(
+                [33.9657, -118.387],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.74, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_ca0ebf10b54a2682799873d5327f2531 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf82a76a52fa3c5edf18938c359d95f7 = $(`<div id="html_cf82a76a52fa3c5edf18938c359d95f7" style="width: 100.0%; height: 100.0%;">Area: Pacific<br>Age Group: Child<br>Incidents: 437</div>`)[0];
+                popup_ca0ebf10b54a2682799873d5327f2531.setContent(html_cf82a76a52fa3c5edf18938c359d95f7);
+            
+        
+
+        circle_f238bbf2eed4385bda0c16c74f8db3df.bindPopup(popup_ca0ebf10b54a2682799873d5327f2531)
+        ;
+
+        
+    
+    
+            var circle_b09e8f1a5a8eeacf22510a604f2c30b7 = L.circle(
+                [34.1709, -118.5291],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.46, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_4bd409a12e0928dfa5352c952fec5e7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc43fd7bde4aad02c0e778981d962561 = $(`<div id="html_cc43fd7bde4aad02c0e778981d962561" style="width: 100.0%; height: 100.0%;">Area: West Valley<br>Age Group: Child<br>Incidents: 423</div>`)[0];
+                popup_4bd409a12e0928dfa5352c952fec5e7d.setContent(html_cc43fd7bde4aad02c0e778981d962561);
+            
+        
+
+        circle_b09e8f1a5a8eeacf22510a604f2c30b7.bindPopup(popup_4bd409a12e0928dfa5352c952fec5e7d)
+        ;
+
+        
+    
+    
+            var circle_1c6bcc19038d382d7ff65f53624a2025 = L.circle(
+                [34.0446, -118.249],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.14, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_dcc2f898e9c18109ef53aa56eb154d78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2be8c24bbf99c90e6d88c6b5bf81000 = $(`<div id="html_c2be8c24bbf99c90e6d88c6b5bf81000" style="width: 100.0%; height: 100.0%;">Area: Central<br>Age Group: Child<br>Incidents: 407</div>`)[0];
+                popup_dcc2f898e9c18109ef53aa56eb154d78.setContent(html_c2be8c24bbf99c90e6d88c6b5bf81000);
+            
+        
+
+        circle_1c6bcc19038d382d7ff65f53624a2025.bindPopup(popup_dcc2f898e9c18109ef53aa56eb154d78)
+        ;
+
+        
+    
+    
+            var circle_29ff483869b4de17d9cf0a8ad1271a38 = L.circle(
+                [34.0862, -118.3091],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_20219c82bcb11496b916403e0b08a436 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_082cc7bac20a876cb9802daab41c73a0 = $(`<div id="html_082cc7bac20a876cb9802daab41c73a0" style="width: 100.0%; height: 100.0%;">Area: Hollywood<br>Age Group: Child<br>Incidents: 350</div>`)[0];
+                popup_20219c82bcb11496b916403e0b08a436.setContent(html_082cc7bac20a876cb9802daab41c73a0);
+            
+        
+
+        circle_29ff483869b4de17d9cf0a8ad1271a38.bindPopup(popup_20219c82bcb11496b916403e0b08a436)
+        ;
+
+        
+    
+    
+            var circle_732d4e9b99291e7723b5efd8b8f3de87 = L.circle(
+                [34.044000000000004, -118.4704],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.94, "stroke": true, "weight": 3}
+            ).addTo(map_1eee1fb9dc08a1bec6e7cd7a4e3eda02);
+        
+    
+        var popup_db14ad4591fe2f8c6d218f4a85864204 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6701c7982416a58ce4c660a1bde5bc12 = $(`<div id="html_6701c7982416a58ce4c660a1bde5bc12" style="width: 100.0%; height: 100.0%;">Area: West LA<br>Age Group: Child<br>Incidents: 247</div>`)[0];
+                popup_db14ad4591fe2f8c6d218f4a85864204.setContent(html_6701c7982416a58ce4c660a1bde5bc12);
+            
+        
+
+        circle_732d4e9b99291e7723b5efd8b8f3de87.bindPopup(popup_db14ad4591fe2f8c6d218f4a85864204)
+        ;
+
+        
+    
+</script>
+</html>

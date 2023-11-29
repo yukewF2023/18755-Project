@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c40ff2e16a6263f70f7c62c54167680f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c40ff2e16a6263f70f7c62c54167680f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c40ff2e16a6263f70f7c62c54167680f = L.map(
+                "map_c40ff2e16a6263f70f7c62c54167680f",
+                {
+                    center: [34.0522, -118.2437],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_daba5b86a997d3640e33d1cf23ee55e9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_daba5b86a997d3640e33d1cf23ee55e9.addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+    
+            var circle_09bd29d330bc0a0846d70ccfab25fe70 = L.circle(
+                [33.9829, -118.3338],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1899.9, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_c227f7115422d9595b84a6627a69dcf4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efda59f9b046db736820d2a4256039a1 = $(`<div id="html_efda59f9b046db736820d2a4256039a1" style="width: 100.0%; height: 100.0%;">Area: 77th Street<br>Most common age group: Adult<br>Most common gender: Female<br>Incidents: 94995</div>`)[0];
+                popup_c227f7115422d9595b84a6627a69dcf4.setContent(html_efda59f9b046db736820d2a4256039a1);
+            
+        
+
+        circle_09bd29d330bc0a0846d70ccfab25fe70.bindPopup(popup_c227f7115422d9595b84a6627a69dcf4)
+        ;
+
+        
+    
+    
+            var circle_bbfc50708e39e3ab644c9c074f65c4ca = L.circle(
+                [34.0037, -118.3045],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1802.18, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_d41659de00f9a33aa8b58846d6be9683 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e07181649953a8eb006a04301661249 = $(`<div id="html_5e07181649953a8eb006a04301661249" style="width: 100.0%; height: 100.0%;">Area: Southwest<br>Most common age group: Adult<br>Most common gender: Female<br>Incidents: 90109</div>`)[0];
+                popup_d41659de00f9a33aa8b58846d6be9683.setContent(html_5e07181649953a8eb006a04301661249);
+            
+        
+
+        circle_bbfc50708e39e3ab644c9c074f65c4ca.bindPopup(popup_d41659de00f9a33aa8b58846d6be9683)
+        ;
+
+        
+    
+    
+            var circle_eb6490938ad0a891666ab3372c173bb6 = L.circle(
+                [34.2012, -118.416],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1535.82, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_de09d7427938484fb9282ed4e9ac1459 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d002161ea4df9c0667918e5db9791034 = $(`<div id="html_d002161ea4df9c0667918e5db9791034" style="width: 100.0%; height: 100.0%;">Area: N Hollywood<br>Most common age group: Adult<br>Most common gender: Male<br>Incidents: 76791</div>`)[0];
+                popup_de09d7427938484fb9282ed4e9ac1459.setContent(html_d002161ea4df9c0667918e5db9791034);
+            
+        
+
+        circle_eb6490938ad0a891666ab3372c173bb6.bindPopup(popup_de09d7427938484fb9282ed4e9ac1459)
+        ;
+
+        
+    
+    
+            var circle_90a71f6c0b6f820523df7dd526126889 = L.circle(
+                [33.9456, -118.2652],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1412.9, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_83b782d1099deade393cbad718a44493 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af88bbb7be1fe0e0c296a9160642f9b9 = $(`<div id="html_af88bbb7be1fe0e0c296a9160642f9b9" style="width: 100.0%; height: 100.0%;">Area: Southeast<br>Most common age group: Adult<br>Most common gender: Female<br>Incidents: 70645</div>`)[0];
+                popup_83b782d1099deade393cbad718a44493.setContent(html_af88bbb7be1fe0e0c296a9160642f9b9);
+            
+        
+
+        circle_90a71f6c0b6f820523df7dd526126889.bindPopup(popup_83b782d1099deade393cbad718a44493)
+        ;
+
+        
+    
+    
+            var circle_fd616dc1f34f0d58232f1bea752bf21b = L.circle(
+                [33.9489, -118.3939],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1351.34, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_66bfa6346abd89ac8a946ffb79759856 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c99d38c10548777da7922525e79dbd69 = $(`<div id="html_c99d38c10548777da7922525e79dbd69" style="width: 100.0%; height: 100.0%;">Area: Pacific<br>Most common age group: Adult<br>Most common gender: Male<br>Incidents: 67567</div>`)[0];
+                popup_66bfa6346abd89ac8a946ffb79759856.setContent(html_c99d38c10548777da7922525e79dbd69);
+            
+        
+
+        circle_fd616dc1f34f0d58232f1bea752bf21b.bindPopup(popup_66bfa6346abd89ac8a946ffb79759856)
+        ;
+
+        
+    
+    
+            var circle_430ae37660007ce8d697d8ed5a965c28 = L.circle(
+                [34.2009, -118.6369],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1314.64, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_d62940339670e93f297eca88403859a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4c582f9da3527c50e1ad238743f85c5 = $(`<div id="html_e4c582f9da3527c50e1ad238743f85c5" style="width: 100.0%; height: 100.0%;">Area: Topanga<br>Most common age group: Adult<br>Most common gender: Male<br>Incidents: 65732</div>`)[0];
+                popup_d62940339670e93f297eca88403859a6.setContent(html_e4c582f9da3527c50e1ad238743f85c5);
+            
+        
+
+        circle_430ae37660007ce8d697d8ed5a965c28.bindPopup(popup_d62940339670e93f297eca88403859a6)
+        ;
+
+        
+    
+    
+            var circle_a93d6b985a07d2b6c5893cf22100fdd3 = L.circle(
+                [34.2717, -118.4459],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1314.34, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_3355f3d4ee290bd7ef61c89fdc80a8c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61d148febc500da0daf686fa5f27334a = $(`<div id="html_61d148febc500da0daf686fa5f27334a" style="width: 100.0%; height: 100.0%;">Area: Mission<br>Most common age group: Adult<br>Most common gender: Female<br>Incidents: 65717</div>`)[0];
+                popup_3355f3d4ee290bd7ef61c89fdc80a8c6.setContent(html_61d148febc500da0daf686fa5f27334a);
+            
+        
+
+        circle_a93d6b985a07d2b6c5893cf22100fdd3.bindPopup(popup_3355f3d4ee290bd7ef61c89fdc80a8c6)
+        ;
+
+        
+    
+    
+            var circle_ea55925c268a6aa080653488319e409f = L.circle(
+                [34.2012, -118.4662],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1259.96, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_29c0cba15853dbe000998f09872b4c6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a630a7d8dc37cd3066d55cc6ee50f85 = $(`<div id="html_2a630a7d8dc37cd3066d55cc6ee50f85" style="width: 100.0%; height: 100.0%;">Area: Van Nuys<br>Most common age group: Adult<br>Most common gender: Female<br>Incidents: 62998</div>`)[0];
+                popup_29c0cba15853dbe000998f09872b4c6d.setContent(html_2a630a7d8dc37cd3066d55cc6ee50f85);
+            
+        
+
+        circle_ea55925c268a6aa080653488319e409f.bindPopup(popup_29c0cba15853dbe000998f09872b4c6d)
+        ;
+
+        
+    
+    
+            var circle_6c7fbfa9cc278b96def30f918f056732 = L.circle(
+                [34.2746, -118.5586],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1241.6000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_fc371fa953ea01fd0d615f8a01bb6ee1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_007fa6ca39cafb369763fb5b2e932081 = $(`<div id="html_007fa6ca39cafb369763fb5b2e932081" style="width: 100.0%; height: 100.0%;">Area: Devonshire<br>Most common age group: Adult<br>Most common gender: Male<br>Incidents: 62080</div>`)[0];
+                popup_fc371fa953ea01fd0d615f8a01bb6ee1.setContent(html_007fa6ca39cafb369763fb5b2e932081);
+            
+        
+
+        circle_6c7fbfa9cc278b96def30f918f056732.bindPopup(popup_fc371fa953ea01fd0d615f8a01bb6ee1)
+        ;
+
+        
+    
+    
+            var circle_1a5d2de28ded32fa48836e0cca1a52f8 = L.circle(
+                [34.0825, -118.25],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1219.4, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_978891eb09ae3137b6678576179b6579 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e29c6371d13d121b23e6fdb8df19835e = $(`<div id="html_e29c6371d13d121b23e6fdb8df19835e" style="width: 100.0%; height: 100.0%;">Area: Northeast<br>Most common age group: Adult<br>Most common gender: Male<br>Incidents: 60970</div>`)[0];
+                popup_978891eb09ae3137b6678576179b6579.setContent(html_e29c6371d13d121b23e6fdb8df19835e);
+            
+        
+
+        circle_1a5d2de28ded32fa48836e0cca1a52f8.bindPopup(popup_978891eb09ae3137b6678576179b6579)
+        ;
+
+        
+    
+    
+            var circle_baedbfbf41a5573b15925683974c2074 = L.circle(
+                [34.0591, -118.2412],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1190.66, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_deff9479f2946c2530baa839d175284b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb561170375d6cc3640ac9731a8e824e = $(`<div id="html_fb561170375d6cc3640ac9731a8e824e" style="width: 100.0%; height: 100.0%;">Area: Central<br>Most common age group: Adult<br>Most common gender: Male<br>Incidents: 59533</div>`)[0];
+                popup_deff9479f2946c2530baa839d175284b.setContent(html_fb561170375d6cc3640ac9731a8e824e);
+            
+        
+
+        circle_baedbfbf41a5573b15925683974c2074.bindPopup(popup_deff9479f2946c2530baa839d175284b)
+        ;
+
+        
+    
+    
+            var circle_a48692ea5106b0a772b5908ea618a8e8 = L.circle(
+                [34.1108, -118.3675],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1179.28, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_2d022cc3c9789d489dc6e14b3e4890b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f4109566cc37d1a31a58ad299adf996 = $(`<div id="html_9f4109566cc37d1a31a58ad299adf996" style="width: 100.0%; height: 100.0%;">Area: Hollywood<br>Most common age group: Adult<br>Most common gender: Male<br>Incidents: 58964</div>`)[0];
+                popup_2d022cc3c9789d489dc6e14b3e4890b1.setContent(html_9f4109566cc37d1a31a58ad299adf996);
+            
+        
+
+        circle_a48692ea5106b0a772b5908ea618a8e8.bindPopup(popup_2d022cc3c9789d489dc6e14b3e4890b1)
+        ;
+
+        
+    
+    
+            var circle_3a398036a7c4b02222e6aba8082a342a = L.circle(
+                [34.0439, -118.2752],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1157.34, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_9562b58f1ac5440ca6a4aa0a5673e059 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d88cdffbb78aee3cde4fb9f9394831b4 = $(`<div id="html_d88cdffbb78aee3cde4fb9f9394831b4" style="width: 100.0%; height: 100.0%;">Area: Rampart<br>Most common age group: Adult<br>Most common gender: Male<br>Incidents: 57867</div>`)[0];
+                popup_9562b58f1ac5440ca6a4aa0a5673e059.setContent(html_d88cdffbb78aee3cde4fb9f9394831b4);
+            
+        
+
+        circle_3a398036a7c4b02222e6aba8082a342a.bindPopup(popup_9562b58f1ac5440ca6a4aa0a5673e059)
+        ;
+
+        
+    
+    
+            var circle_fa20d957d40b71f38d98968a9e4755f7 = L.circle(
+                [34.1069, -118.4055],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1152.26, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_e63301163e06b56c75166a92c25ffbbd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_116d1e28939d463af3bac63c56fee51f = $(`<div id="html_116d1e28939d463af3bac63c56fee51f" style="width: 100.0%; height: 100.0%;">Area: West LA<br>Most common age group: Adult<br>Most common gender: Male<br>Incidents: 57613</div>`)[0];
+                popup_e63301163e06b56c75166a92c25ffbbd.setContent(html_116d1e28939d463af3bac63c56fee51f);
+            
+        
+
+        circle_fa20d957d40b71f38d98968a9e4755f7.bindPopup(popup_e63301163e06b56c75166a92c25ffbbd)
+        ;
+
+        
+    
+    
+            var circle_ae458d18dfe9bb9108fec6f13e5e80c5 = L.circle(
+                [33.9851, -118.2783],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1147.74, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_7ce184f7b2f6eb118a2cdcc9cdd6c3ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ff3c3ba2dec6652b998ed2f688b0632 = $(`<div id="html_3ff3c3ba2dec6652b998ed2f688b0632" style="width: 100.0%; height: 100.0%;">Area: Newton<br>Most common age group: Adult<br>Most common gender: Female<br>Incidents: 57387</div>`)[0];
+                popup_7ce184f7b2f6eb118a2cdcc9cdd6c3ea.setContent(html_3ff3c3ba2dec6652b998ed2f688b0632);
+            
+        
+
+        circle_ae458d18dfe9bb9108fec6f13e5e80c5.bindPopup(popup_7ce184f7b2f6eb118a2cdcc9cdd6c3ea)
+        ;
+
+        
+    
+    
+            var circle_952d708e53d6561e4ad9554f68d9367b = L.circle(
+                [33.804, -118.3004],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1142.5, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_46dd59b5e177206e2834fe7bc6558be0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c539601c207046f7d69666a74515c34d = $(`<div id="html_c539601c207046f7d69666a74515c34d" style="width: 100.0%; height: 100.0%;">Area: Harbor<br>Most common age group: Adult<br>Most common gender: Male<br>Incidents: 57125</div>`)[0];
+                popup_46dd59b5e177206e2834fe7bc6558be0.setContent(html_c539601c207046f7d69666a74515c34d);
+            
+        
+
+        circle_952d708e53d6561e4ad9554f68d9367b.bindPopup(popup_46dd59b5e177206e2834fe7bc6558be0)
+        ;
+
+        
+    
+    
+            var circle_8261ca540f0f805c2a7cbc41eb24e3de = L.circle(
+                [34.0597, -118.3042],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1115.32, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_d7ee98b66ec25bfe894f7a020aa2c144 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7311164e73912d0073b388f1edae3f35 = $(`<div id="html_7311164e73912d0073b388f1edae3f35" style="width: 100.0%; height: 100.0%;">Area: Olympic<br>Most common age group: Adult<br>Most common gender: Male<br>Incidents: 55766</div>`)[0];
+                popup_d7ee98b66ec25bfe894f7a020aa2c144.setContent(html_7311164e73912d0073b388f1edae3f35);
+            
+        
+
+        circle_8261ca540f0f805c2a7cbc41eb24e3de.bindPopup(popup_d7ee98b66ec25bfe894f7a020aa2c144)
+        ;
+
+        
+    
+    
+            var circle_d0d9a73cd66c02178f3b3d6578cb3172 = L.circle(
+                [34.0835, -118.3386],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1107.52, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_53bcfdad30bd4774010e74454975688c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e49c8554f237ee0c3fdfb0f4e70b2f2 = $(`<div id="html_3e49c8554f237ee0c3fdfb0f4e70b2f2" style="width: 100.0%; height: 100.0%;">Area: Wilshire<br>Most common age group: Adult<br>Most common gender: Male<br>Incidents: 55376</div>`)[0];
+                popup_53bcfdad30bd4774010e74454975688c.setContent(html_3e49c8554f237ee0c3fdfb0f4e70b2f2);
+            
+        
+
+        circle_d0d9a73cd66c02178f3b3d6578cb3172.bindPopup(popup_53bcfdad30bd4774010e74454975688c)
+        ;
+
+        
+    
+    
+            var circle_393b8a1d8d5a620c2b7928342edcfba0 = L.circle(
+                [34.1903, -118.5262],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1098.58, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_c36823ccf44a5cdc186a8f9a521ccc59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43dd1851745b20d243488cb2bfec471c = $(`<div id="html_43dd1851745b20d243488cb2bfec471c" style="width: 100.0%; height: 100.0%;">Area: West Valley<br>Most common age group: Adult<br>Most common gender: Female<br>Incidents: 54929</div>`)[0];
+                popup_c36823ccf44a5cdc186a8f9a521ccc59.setContent(html_43dd1851745b20d243488cb2bfec471c);
+            
+        
+
+        circle_393b8a1d8d5a620c2b7928342edcfba0.bindPopup(popup_c36823ccf44a5cdc186a8f9a521ccc59)
+        ;
+
+        
+    
+    
+            var circle_43a4567e6b474c55374d219a306dfec1 = L.circle(
+                [34.2679, -118.3008],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 980.6, "stroke": true, "weight": 3}
+            ).addTo(map_c40ff2e16a6263f70f7c62c54167680f);
+        
+    
+        var popup_1bfe7c0712ad04f1863a3447f5d45239 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69f55c4c0ba1c524aaedd2a130d76dfb = $(`<div id="html_69f55c4c0ba1c524aaedd2a130d76dfb" style="width: 100.0%; height: 100.0%;">Area: Foothill<br>Most common age group: Adult<br>Most common gender: Male<br>Incidents: 49030</div>`)[0];
+                popup_1bfe7c0712ad04f1863a3447f5d45239.setContent(html_69f55c4c0ba1c524aaedd2a130d76dfb);
+            
+        
+
+        circle_43a4567e6b474c55374d219a306dfec1.bindPopup(popup_1bfe7c0712ad04f1863a3447f5d45239)
+        ;
+
+        
+    
+</script>
+</html>
