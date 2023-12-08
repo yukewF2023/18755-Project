@@ -1,7 +1,7 @@
 import folium
 import pandas as pd
 
-df = pd.read_csv('la_crime_cleaned.csv')
+df = pd.read_csv('../la_crime_cleaned.csv')
 
 weapons = ["KNIFE WITH BLADE 6INCHES OR LESS", "HAND GUN", "OTHER KNIFE"]
 filtered_df = df[df['weapon_description'].isin(weapons)]

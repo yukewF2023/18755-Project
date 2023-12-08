@@ -2,28 +2,28 @@ import pandas as pd
 import networkx as nx
 
 # Create a multigraph
-# MG = nx.MultiGraph()
-#
-# df = pd.read_csv('la_crime_cleaned.csv')
-# # filter those with no description and unknown weapon
-# filtered_df = df[df['weapon_description'] != 'no description']
-# filtered_df = filtered_df[filtered_df['weapon_description'] != 'UNKNOWN WEAPON/OTHER WEAPON']
-#
-# for index, row in filtered_df.iterrows():
-#     crime = row['crime_code_description']
-#     weapon = row['weapon_description']
-#
-#     if not MG.has_node(crime):
-#         MG.add_node(crime, type='crime')
-#     if not MG.has_node(weapon):
-#         MG.add_node(weapon, type='weapon')
-#
-#     MG.add_edge(crime, weapon)
-#
-# print(f"Number of nodes: {MG.number_of_nodes()}")
-# print(f"Number of edges: {MG.number_of_edges()}")
-#
-# nx.write_gml(MG, "crime_weapon_multigraph.gml")
+MG = nx.MultiGraph()
+
+df = pd.read_csv('../la_crime_cleaned.csv')
+# filter those with no description and unknown weapon
+filtered_df = df[df['weapon_description'] != 'no description']
+filtered_df = filtered_df[filtered_df['weapon_description'] != 'UNKNOWN WEAPON/OTHER WEAPON']
+
+for index, row in filtered_df.iterrows():
+    crime = row['crime_code_description']
+    weapon = row['weapon_description']
+
+    if not MG.has_node(crime):
+        MG.add_node(crime, type='crime')
+    if not MG.has_node(weapon):
+        MG.add_node(weapon, type='weapon')
+
+    MG.add_edge(crime, weapon)
+
+print(f"Number of nodes: {MG.number_of_nodes()}")
+print(f"Number of edges: {MG.number_of_edges()}")
+
+nx.write_gml(MG, "crime_weapon_multigraph.gml")
 MG = nx.read_gml("crime_weapon_multigraph.gml")
 
 def project_bipartite_multigraph(G, nodes):
