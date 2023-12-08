@@ -7,7 +7,10 @@ data = pd.read_csv('../la_crime_cleaned.csv')
 
 # Filter out invalid 'victim_sex' values
 valid_sexes = {'Male', 'Female'}
+# Valid Data
 la_crime_sample = data[data['victim_sex'].isin(valid_sexes)]
+
+# Filter out invalid 'victim_age' values
 la_crime_sample = la_crime_sample[la_crime_sample['victim_age'] <= 100]
 
 # Categorize 'victim_age' into different age groups
@@ -23,6 +26,7 @@ def categorize_age(age):
     else:
         return 'Senior'
 
+# Create a new 'age_group' column
 la_crime_sample['age_group'] = la_crime_sample['victim_age'].apply(categorize_age)
 G = nx.Graph()
 
@@ -40,6 +44,7 @@ nx.write_gexf(G, 'la_crime_network_age_groups.gexf')
 # %%
 # Degree Centrality
 degree_centrality = nx.degree_centrality(G)
+# Sort the nodes by degree centrality
 sorted_degree_centrality = sorted(degree_centrality.items(), key=lambda x: x[1], reverse=True)
 for node, centrality in sorted_degree_centrality[:5]:
     print(f"Node: {node}, Degree Centrality: {centrality}")
@@ -48,6 +53,7 @@ for node, centrality in sorted_degree_centrality[:5]:
 # %%
 # Edge Weights
 edge_weights = [(u, v, d['weight']) for u, v, d in G.edges(data=True)]
+# Sort the edges by weight
 sorted_edge_weights = sorted(edge_weights, key=lambda x: x[2], reverse=True)
 for u, v, weight in sorted_edge_weights[:5]:
     print(f"Edge: ({u}, {v}), Weight: {weight}")
@@ -58,6 +64,7 @@ age_groups = ['Child', 'Teenager', 'Young Adult', 'Adult', 'Senior']
 crime_by_area_for_age_group = {age_group: {} for age_group in age_groups}
 areas = [node for node, attr in G.nodes(data=True) if attr['type'] == 'area']
 
+# Calculate the crime count for each area for each age group
 for area in areas:
     for age_node in G.neighbors(area):
         age_group = age_node.split()[-1]
@@ -68,6 +75,7 @@ for area in areas:
             else:
                 crime_by_area_for_age_group[age_group][area] = crime_count
 
+# Sort the areas for each age group by crime count
 sorted_areas_by_age_group = {}
 for age_group in age_groups:
     sorted_areas = sorted(crime_by_area_for_age_group[age_group].items(), key=lambda x: x[1], reverse=True)
@@ -82,6 +90,7 @@ import folium
 
 data =  la_crime_sample
 
+# Generate a DataFrame with the top 20 areas by crime count
 crime_counts = data.groupby('area_name').agg({
     'ID': 'count',
     'longitude': 'first', 
@@ -90,8 +99,8 @@ crime_counts = data.groupby('area_name').agg({
     'victim_sex': lambda x: x.mode()[0]
 })
 crime_counts = crime_counts.sort_values('ID', ascending=False).head(20)
-
-m = folium.Map(location=[34.0522, -118.2437], zoom_start=10)  # Coordinates for Los Angeles
+# Generate Map with coordinates for Los Angeles
+m = folium.Map(location=[34.0522, -118.2437], zoom_start=10)  
 
 # Draw circles for each area (colored by most common victim sex)
 for index, row in crime_counts.iterrows():
@@ -111,14 +120,15 @@ m
 
 
 # %%
+# Generate a DataFrame with the top 3 areas for each age group
 age_group_area_counts = data.groupby(['age_group', 'area_name']).agg({
     'ID': 'count',
     'longitude': 'first', 
     'latitude': 'first'
 }).reset_index()
-
 top_3_per_age_group = age_group_area_counts.groupby('age_group').apply(lambda x: x.nlargest(3, 'ID')).reset_index(drop=True)
 
+# Color each area based on age group
 age_group_colors = {
     'Child': 'green',
     'Teenager': 'blue',
