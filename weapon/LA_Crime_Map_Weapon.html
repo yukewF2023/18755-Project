@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_667872f7312d05290fe839223b1603c0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_667872f7312d05290fe839223b1603c0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_667872f7312d05290fe839223b1603c0 = L.map(
+                "map_667872f7312d05290fe839223b1603c0",
+                {
+                    center: [34.0522, -118.2437],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_852e5b0a898c634d6a01cb811ce6d6ae = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_852e5b0a898c634d6a01cb811ce6d6ae.addTo(map_667872f7312d05290fe839223b1603c0);
+    
+            var circle_6d3b5419a20560a95fe063f0de567a3b = L.circle(
+                [33.921800387061104, -118.1026027094277],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5425.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_f8cda5254a16c07a0c48c0ecb7c55d57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf9d3f82bdafe6e7eb5e4ac7088eeec7 = $(`<div id="html_cf9d3f82bdafe6e7eb5e4ac7088eeec7" style="width: 100.0%; height: 100.0%;">area_name: 77th Street<br>weapon: HAND GUN<br>count: 3617</div>`)[0];
+                popup_f8cda5254a16c07a0c48c0ecb7c55d57.setContent(html_cf9d3f82bdafe6e7eb5e4ac7088eeec7);
+            
+        
+
+        circle_6d3b5419a20560a95fe063f0de567a3b.bindPopup(popup_f8cda5254a16c07a0c48c0ecb7c55d57)
+        ;
+
+        
+    
+    
+            var circle_1a75018cfb872d3e639039bd9fe734e1 = L.circle(
+                [33.94141181015453, -118.1653908388521],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1359.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_f0f8d94b16bd979688619843d598ea35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47db11f6b94215fdb8b0e471769b076e = $(`<div id="html_47db11f6b94215fdb8b0e471769b076e" style="width: 100.0%; height: 100.0%;">area_name: 77th Street<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 906</div>`)[0];
+                popup_f0f8d94b16bd979688619843d598ea35.setContent(html_47db11f6b94215fdb8b0e471769b076e);
+            
+        
+
+        circle_1a75018cfb872d3e639039bd9fe734e1.bindPopup(popup_f0f8d94b16bd979688619843d598ea35)
+        ;
+
+        
+    
+    
+            var circle_6e558665baeee1822abecdee0f2d7896 = L.circle(
+                [33.918892160278745, -118.08956655052265],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 861.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_a9c5e12323c8daa24fc163b4122c1e88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65e9e01eaebb2789e1b0fe677bde780f = $(`<div id="html_65e9e01eaebb2789e1b0fe677bde780f" style="width: 100.0%; height: 100.0%;">area_name: 77th Street<br>weapon: OTHER KNIFE<br>count: 574</div>`)[0];
+                popup_a9c5e12323c8daa24fc163b4122c1e88.setContent(html_65e9e01eaebb2789e1b0fe677bde780f);
+            
+        
+
+        circle_6e558665baeee1822abecdee0f2d7896.bindPopup(popup_a9c5e12323c8daa24fc163b4122c1e88)
+        ;
+
+        
+    
+    
+            var circle_e80c8985f5fa6fce7763881f9ece0e14 = L.circle(
+                [34.04638846153846, -118.24999780219781],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 819.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_62c4ae371772151316d59daf67c51b1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73e26e34c5a4c018f36778f3aa263ffa = $(`<div id="html_73e26e34c5a4c018f36778f3aa263ffa" style="width: 100.0%; height: 100.0%;">area_name: Central<br>weapon: HAND GUN<br>count: 546</div>`)[0];
+                popup_62c4ae371772151316d59daf67c51b1c.setContent(html_73e26e34c5a4c018f36778f3aa263ffa);
+            
+        
+
+        circle_e80c8985f5fa6fce7763881f9ece0e14.bindPopup(popup_62c4ae371772151316d59daf67c51b1c)
+        ;
+
+        
+    
+    
+            var circle_0621599ce72aee90a7336acc15876550 = L.circle(
+                [33.873246700507615, -117.65062969543148],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 591.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_1e060f33c27e8da91fe724009ef32c84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e20fa7f17d3c34c43403d9ccb5c0731c = $(`<div id="html_e20fa7f17d3c34c43403d9ccb5c0731c" style="width: 100.0%; height: 100.0%;">area_name: Central<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 394</div>`)[0];
+                popup_1e060f33c27e8da91fe724009ef32c84.setContent(html_e20fa7f17d3c34c43403d9ccb5c0731c);
+            
+        
+
+        circle_0621599ce72aee90a7336acc15876550.bindPopup(popup_1e060f33c27e8da91fe724009ef32c84)
+        ;
+
+        
+    
+    
+            var circle_a177f51da7530af82daa5233ca34f7a9 = L.circle(
+                [33.93306138613861, -117.85870429042905],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1363.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_3e851d6c3032e77c321f328875843770 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2799a614cffce26eef877cfccccd173 = $(`<div id="html_c2799a614cffce26eef877cfccccd173" style="width: 100.0%; height: 100.0%;">area_name: Central<br>weapon: OTHER KNIFE<br>count: 909</div>`)[0];
+                popup_3e851d6c3032e77c321f328875843770.setContent(html_c2799a614cffce26eef877cfccccd173);
+            
+        
+
+        circle_a177f51da7530af82daa5233ca34f7a9.bindPopup(popup_3e851d6c3032e77c321f328875843770)
+        ;
+
+        
+    
+    
+            var circle_a3554c195875f52c234fdaa6078b239b = L.circle(
+                [34.2455200408998, -118.53519570552147],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 733.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_22785e82954326541811b5a6cef608c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f76ba48a9ccedc9430851c9ff7e6fdc4 = $(`<div id="html_f76ba48a9ccedc9430851c9ff7e6fdc4" style="width: 100.0%; height: 100.0%;">area_name: Devonshire<br>weapon: HAND GUN<br>count: 489</div>`)[0];
+                popup_22785e82954326541811b5a6cef608c0.setContent(html_f76ba48a9ccedc9430851c9ff7e6fdc4);
+            
+        
+
+        circle_a3554c195875f52c234fdaa6078b239b.bindPopup(popup_22785e82954326541811b5a6cef608c0)
+        ;
+
+        
+    
+    
+            var circle_09af3f62bea604a4e2f7cf9e961c4164 = L.circle(
+                [34.24741476510067, -118.53035503355704],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 223.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_7a036639f99f8918ae19d74bbd4936e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bc0d63bec9031cb8977d856d6a48b7b = $(`<div id="html_6bc0d63bec9031cb8977d856d6a48b7b" style="width: 100.0%; height: 100.0%;">area_name: Devonshire<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 149</div>`)[0];
+                popup_7a036639f99f8918ae19d74bbd4936e2.setContent(html_6bc0d63bec9031cb8977d856d6a48b7b);
+            
+        
+
+        circle_09af3f62bea604a4e2f7cf9e961c4164.bindPopup(popup_7a036639f99f8918ae19d74bbd4936e2)
+        ;
+
+        
+    
+    
+            var circle_5c79bc372d9586176f8c5ec75583e918 = L.circle(
+                [34.244628484848484, -118.53814121212122],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 247.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_376e600c69a0187ddcddd9203154e603 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_538edd3c352000022381910dd0d09691 = $(`<div id="html_538edd3c352000022381910dd0d09691" style="width: 100.0%; height: 100.0%;">area_name: Devonshire<br>weapon: OTHER KNIFE<br>count: 165</div>`)[0];
+                popup_376e600c69a0187ddcddd9203154e603.setContent(html_538edd3c352000022381910dd0d09691);
+            
+        
+
+        circle_5c79bc372d9586176f8c5ec75583e918.bindPopup(popup_376e600c69a0187ddcddd9203154e603)
+        ;
+
+        
+    
+    
+            var circle_325097e74ab464727fc84389b9a37133 = L.circle(
+                [34.15720365853659, -118.0615959662289],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1599.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_1abffc2dfc2ef5b3da3b093869fd0d1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2594de8aaadcb7dd40ae31594ce6e83a = $(`<div id="html_2594de8aaadcb7dd40ae31594ce6e83a" style="width: 100.0%; height: 100.0%;">area_name: Foothill<br>weapon: HAND GUN<br>count: 1066</div>`)[0];
+                popup_1abffc2dfc2ef5b3da3b093869fd0d1c.setContent(html_2594de8aaadcb7dd40ae31594ce6e83a);
+            
+        
+
+        circle_325097e74ab464727fc84389b9a37133.bindPopup(popup_1abffc2dfc2ef5b3da3b093869fd0d1c)
+        ;
+
+        
+    
+    
+            var circle_1e3156b8bde28bbb1af8d5ea06bae9de = L.circle(
+                [34.24958550724638, -118.38909275362319],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 310.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_b7deef380b0a746ac0cee0aa26be57fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf2d77a9d87ca030577f15b4e409076f = $(`<div id="html_cf2d77a9d87ca030577f15b4e409076f" style="width: 100.0%; height: 100.0%;">area_name: Foothill<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 207</div>`)[0];
+                popup_b7deef380b0a746ac0cee0aa26be57fc.setContent(html_cf2d77a9d87ca030577f15b4e409076f);
+            
+        
+
+        circle_1e3156b8bde28bbb1af8d5ea06bae9de.bindPopup(popup_b7deef380b0a746ac0cee0aa26be57fc)
+        ;
+
+        
+    
+    
+            var circle_d69eb9ddd627744837c8fef6375f7506 = L.circle(
+                [34.25114163265306, -118.38935142857143],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 367.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_7c568e32daf96807f7b7d177043fe299 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b222a74a85d1206b99f8fe0405da92f5 = $(`<div id="html_b222a74a85d1206b99f8fe0405da92f5" style="width: 100.0%; height: 100.0%;">area_name: Foothill<br>weapon: OTHER KNIFE<br>count: 245</div>`)[0];
+                popup_7c568e32daf96807f7b7d177043fe299.setContent(html_b222a74a85d1206b99f8fe0405da92f5);
+            
+        
+
+        circle_d69eb9ddd627744837c8fef6375f7506.bindPopup(popup_7c568e32daf96807f7b7d177043fe299)
+        ;
+
+        
+    
+    
+            var circle_93816cfe610e44a96884396d1f65d145 = L.circle(
+                [33.65161768459435, -117.85293546034639],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1645.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_3806c99dd0fe6f4e3c484208f60aea3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9c81e765d0698c6323854f6f9da63ba = $(`<div id="html_a9c81e765d0698c6323854f6f9da63ba" style="width: 100.0%; height: 100.0%;">area_name: Harbor<br>weapon: HAND GUN<br>count: 1097</div>`)[0];
+                popup_3806c99dd0fe6f4e3c484208f60aea3b.setContent(html_a9c81e765d0698c6323854f6f9da63ba);
+            
+        
+
+        circle_93816cfe610e44a96884396d1f65d145.bindPopup(popup_3806c99dd0fe6f4e3c484208f60aea3b)
+        ;
+
+        
+    
+    
+            var circle_f0e55b9b888c983afd1656dacce8d097 = L.circle(
+                [33.45937967667437, -117.1898027713626],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 649.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_a5ee7c881f04dad99e1e93e9012dcfa1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ea8fa5c65e7b46527df9d34ddb476d2 = $(`<div id="html_8ea8fa5c65e7b46527df9d34ddb476d2" style="width: 100.0%; height: 100.0%;">area_name: Harbor<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 433</div>`)[0];
+                popup_a5ee7c881f04dad99e1e93e9012dcfa1.setContent(html_8ea8fa5c65e7b46527df9d34ddb476d2);
+            
+        
+
+        circle_f0e55b9b888c983afd1656dacce8d097.bindPopup(popup_a5ee7c881f04dad99e1e93e9012dcfa1)
+        ;
+
+        
+    
+    
+            var circle_9f64f37a682021d9ff5422cd83dbca15 = L.circle(
+                [33.76565, -118.28400094339624],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 318.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_c522ccf71edf5c50a516d0c2c0fe8452 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_197ce61c40d882b6be4c4444bca80244 = $(`<div id="html_197ce61c40d882b6be4c4444bca80244" style="width: 100.0%; height: 100.0%;">area_name: Harbor<br>weapon: OTHER KNIFE<br>count: 212</div>`)[0];
+                popup_c522ccf71edf5c50a516d0c2c0fe8452.setContent(html_197ce61c40d882b6be4c4444bca80244);
+            
+        
+
+        circle_9f64f37a682021d9ff5422cd83dbca15.bindPopup(popup_c522ccf71edf5c50a516d0c2c0fe8452)
+        ;
+
+        
+    
+    
+            var circle_3566657c290244dcf4a704f426aa22a5 = L.circle(
+                [33.74825723684211, -117.13276332236843],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1824.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_3ded1e01dda978e4be12e3bfc2fee54d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b24926465e66a812e84fdc93a38e284 = $(`<div id="html_4b24926465e66a812e84fdc93a38e284" style="width: 100.0%; height: 100.0%;">area_name: Hollenbeck<br>weapon: HAND GUN<br>count: 1216</div>`)[0];
+                popup_3ded1e01dda978e4be12e3bfc2fee54d.setContent(html_4b24926465e66a812e84fdc93a38e284);
+            
+        
+
+        circle_3566657c290244dcf4a704f426aa22a5.bindPopup(popup_3ded1e01dda978e4be12e3bfc2fee54d)
+        ;
+
+        
+    
+    
+            var circle_486709308529445c539274a0a978c827 = L.circle(
+                [34.05450124223602, -118.20219875776398],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 241.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_98c4602c4b2303202948942c72987c76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c86dfe1e10c0dfb7992786a54f5ae5ab = $(`<div id="html_c86dfe1e10c0dfb7992786a54f5ae5ab" style="width: 100.0%; height: 100.0%;">area_name: Hollenbeck<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 161</div>`)[0];
+                popup_98c4602c4b2303202948942c72987c76.setContent(html_c86dfe1e10c0dfb7992786a54f5ae5ab);
+            
+        
+
+        circle_486709308529445c539274a0a978c827.bindPopup(popup_98c4602c4b2303202948942c72987c76)
+        ;
+
+        
+    
+    
+            var circle_5027e30c9bc4d64643c592fa510df029 = L.circle(
+                [33.782831926121375, -117.26831688654353],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 568.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_80197dbbecf7c4bd7ee63f7a60869fb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5dbe7f1452a17a94c40e2a68f031a33b = $(`<div id="html_5dbe7f1452a17a94c40e2a68f031a33b" style="width: 100.0%; height: 100.0%;">area_name: Hollenbeck<br>weapon: OTHER KNIFE<br>count: 379</div>`)[0];
+                popup_80197dbbecf7c4bd7ee63f7a60869fb9.setContent(html_5dbe7f1452a17a94c40e2a68f031a33b);
+            
+        
+
+        circle_5027e30c9bc4d64643c592fa510df029.bindPopup(popup_80197dbbecf7c4bd7ee63f7a60869fb9)
+        ;
+
+        
+    
+    
+            var circle_18e89766085d6cb70e199ec689ef1afb = L.circle(
+                [33.87144821192053, -117.54304066225166],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1132.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_35927d836021a4003b8872b2fc7e0d79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_040946e66600720400f3ba19875c79dd = $(`<div id="html_040946e66600720400f3ba19875c79dd" style="width: 100.0%; height: 100.0%;">area_name: Hollywood<br>weapon: HAND GUN<br>count: 755</div>`)[0];
+                popup_35927d836021a4003b8872b2fc7e0d79.setContent(html_040946e66600720400f3ba19875c79dd);
+            
+        
+
+        circle_18e89766085d6cb70e199ec689ef1afb.bindPopup(popup_35927d836021a4003b8872b2fc7e0d79)
+        ;
+
+        
+    
+    
+            var circle_c4101ef4ce6a5ec9aad618bb94866e67 = L.circle(
+                [34.02871322645291, -118.08780160320642],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 748.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_213012ddec7c3ca8bf4194f1a42f5fb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cae60cb0cf36e9fd8dc6ebcd45fb20f = $(`<div id="html_6cae60cb0cf36e9fd8dc6ebcd45fb20f" style="width: 100.0%; height: 100.0%;">area_name: Hollywood<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 499</div>`)[0];
+                popup_213012ddec7c3ca8bf4194f1a42f5fb1.setContent(html_6cae60cb0cf36e9fd8dc6ebcd45fb20f);
+            
+        
+
+        circle_c4101ef4ce6a5ec9aad618bb94866e67.bindPopup(popup_213012ddec7c3ca8bf4194f1a42f5fb1)
+        ;
+
+        
+    
+    
+            var circle_b3d3a047d24ef4105516e4404c5bd62e = L.circle(
+                [34.0979441696113, -118.32754134275618],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 424.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_ff7f653b98f4f4c4f31d9eef84f6e8bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2fd175f2308178b85c1cebda47bab41 = $(`<div id="html_c2fd175f2308178b85c1cebda47bab41" style="width: 100.0%; height: 100.0%;">area_name: Hollywood<br>weapon: OTHER KNIFE<br>count: 283</div>`)[0];
+                popup_ff7f653b98f4f4c4f31d9eef84f6e8bd.setContent(html_c2fd175f2308178b85c1cebda47bab41);
+            
+        
+
+        circle_b3d3a047d24ef4105516e4404c5bd62e.bindPopup(popup_ff7f653b98f4f4c4f31d9eef84f6e8bd)
+        ;
+
+        
+    
+    
+            var circle_005be980a03d262f8c8943a06e363cd8 = L.circle(
+                [34.119367551622425, -117.98479124877089],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1525.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_06a7937de8af4c329a1c78c341fe720a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fe8d76b6008e6961800adb1468e1cd9 = $(`<div id="html_5fe8d76b6008e6961800adb1468e1cd9" style="width: 100.0%; height: 100.0%;">area_name: Mission<br>weapon: HAND GUN<br>count: 1017</div>`)[0];
+                popup_06a7937de8af4c329a1c78c341fe720a.setContent(html_5fe8d76b6008e6961800adb1468e1cd9);
+            
+        
+
+        circle_005be980a03d262f8c8943a06e363cd8.bindPopup(popup_06a7937de8af4c329a1c78c341fe720a)
+        ;
+
+        
+    
+    
+            var circle_a331f2aec15345d1f1a7183a679633de = L.circle(
+                [33.97829787798409, -117.50856206896552],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 565.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_3c79bd5315e148ff28c9ca405940d33a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d517ad2b0dbe431ded91ac347c28672 = $(`<div id="html_2d517ad2b0dbe431ded91ac347c28672" style="width: 100.0%; height: 100.0%;">area_name: Mission<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 377</div>`)[0];
+                popup_3c79bd5315e148ff28c9ca405940d33a.setContent(html_2d517ad2b0dbe431ded91ac347c28672);
+            
+        
+
+        circle_a331f2aec15345d1f1a7183a679633de.bindPopup(popup_3c79bd5315e148ff28c9ca405940d33a)
+        ;
+
+        
+    
+    
+            var circle_8f14935eb335b197a6515189e1c21a4a = L.circle(
+                [34.25047724550898, -118.45180359281437],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 501.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_71281045cbb3909ce7b20a538f49f05f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df8173f65f67e08c9cbac337e6e82aaa = $(`<div id="html_df8173f65f67e08c9cbac337e6e82aaa" style="width: 100.0%; height: 100.0%;">area_name: Mission<br>weapon: OTHER KNIFE<br>count: 334</div>`)[0];
+                popup_71281045cbb3909ce7b20a538f49f05f.setContent(html_df8173f65f67e08c9cbac337e6e82aaa);
+            
+        
+
+        circle_8f14935eb335b197a6515189e1c21a4a.bindPopup(popup_71281045cbb3909ce7b20a538f49f05f)
+        ;
+
+        
+    
+    
+            var circle_648eaa296881a352c885821ba5d3140d = L.circle(
+                [34.08537186629526, -118.05867771587744],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1077.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_6e880bf5ab107d83b2a0345784ead0a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5d05a05bf84c88d6f8ec3bbe4c3eaf5 = $(`<div id="html_a5d05a05bf84c88d6f8ec3bbe4c3eaf5" style="width: 100.0%; height: 100.0%;">area_name: N Hollywood<br>weapon: HAND GUN<br>count: 718</div>`)[0];
+                popup_6e880bf5ab107d83b2a0345784ead0a7.setContent(html_a5d05a05bf84c88d6f8ec3bbe4c3eaf5);
+            
+        
+
+        circle_648eaa296881a352c885821ba5d3140d.bindPopup(popup_6e880bf5ab107d83b2a0345784ead0a7)
+        ;
+
+        
+    
+    
+            var circle_fd51470e7e94d98bf2eae14e0103af83 = L.circle(
+                [34.17997227272727, -118.3854725],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 660.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_78c6251fe6d10a04f39d15df9caa4e87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dda590e91a042a77f5866bf7d3c294e8 = $(`<div id="html_dda590e91a042a77f5866bf7d3c294e8" style="width: 100.0%; height: 100.0%;">area_name: N Hollywood<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 440</div>`)[0];
+                popup_78c6251fe6d10a04f39d15df9caa4e87.setContent(html_dda590e91a042a77f5866bf7d3c294e8);
+            
+        
+
+        circle_fd51470e7e94d98bf2eae14e0103af83.bindPopup(popup_78c6251fe6d10a04f39d15df9caa4e87)
+        ;
+
+        
+    
+    
+            var circle_c7162db6d73939e49e9c177448f34585 = L.circle(
+                [33.619494262295085, -116.44489262295083],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 183.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_02aa2e1ba47c3039b26ac692affb88ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c83c84543a5678a92769a801edee475b = $(`<div id="html_c83c84543a5678a92769a801edee475b" style="width: 100.0%; height: 100.0%;">area_name: N Hollywood<br>weapon: OTHER KNIFE<br>count: 122</div>`)[0];
+                popup_02aa2e1ba47c3039b26ac692affb88ca.setContent(html_c83c84543a5678a92769a801edee475b);
+            
+        
+
+        circle_c7162db6d73939e49e9c177448f34585.bindPopup(popup_02aa2e1ba47c3039b26ac692affb88ca)
+        ;
+
+        
+    
+    
+            var circle_ee2d3f5fb522d20d97da224b15dbb7e1 = L.circle(
+                [33.85283814484127, -117.73423219246033],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3024.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_4be6a9927eb277404b813b7410664d97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_297d37513cd1db75e01ca875627e5b08 = $(`<div id="html_297d37513cd1db75e01ca875627e5b08" style="width: 100.0%; height: 100.0%;">area_name: Newton<br>weapon: HAND GUN<br>count: 2016</div>`)[0];
+                popup_4be6a9927eb277404b813b7410664d97.setContent(html_297d37513cd1db75e01ca875627e5b08);
+            
+        
+
+        circle_ee2d3f5fb522d20d97da224b15dbb7e1.bindPopup(popup_4be6a9927eb277404b813b7410664d97)
+        ;
+
+        
+    
+    
+            var circle_543cbdcb41ebf9fe5e6540f19763c621 = L.circle(
+                [33.82603216187433, -117.63213610223643],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1408.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_fbaff5bc9157ee323a1ad02bcc719c0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d06ba52e89562d602e8bf47c172f44ec = $(`<div id="html_d06ba52e89562d602e8bf47c172f44ec" style="width: 100.0%; height: 100.0%;">area_name: Newton<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 939</div>`)[0];
+                popup_fbaff5bc9157ee323a1ad02bcc719c0a.setContent(html_d06ba52e89562d602e8bf47c172f44ec);
+            
+        
+
+        circle_543cbdcb41ebf9fe5e6540f19763c621.bindPopup(popup_fbaff5bc9157ee323a1ad02bcc719c0a)
+        ;
+
+        
+    
+    
+            var circle_ee4adff72e733231bd45d9c545f95e2c = L.circle(
+                [34.0100462295082, -118.26077409836064],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 457.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_358023859e754c0d06ab1ede4a4e2799 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c84162eb0de04cc3fa6f794ca71af2b5 = $(`<div id="html_c84162eb0de04cc3fa6f794ca71af2b5" style="width: 100.0%; height: 100.0%;">area_name: Newton<br>weapon: OTHER KNIFE<br>count: 305</div>`)[0];
+                popup_358023859e754c0d06ab1ede4a4e2799.setContent(html_c84162eb0de04cc3fa6f794ca71af2b5);
+            
+        
+
+        circle_ee4adff72e733231bd45d9c545f95e2c.bindPopup(popup_358023859e754c0d06ab1ede4a4e2799)
+        ;
+
+        
+    
+    
+            var circle_305639aaa4fd0846ea8013fed8b80118 = L.circle(
+                [33.9886652360515, -117.82797716738199],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1747.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_965e52d4c1b99cd87cc05e78bd89c2e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf7974d3613864ff5451e37c8561a958 = $(`<div id="html_bf7974d3613864ff5451e37c8561a958" style="width: 100.0%; height: 100.0%;">area_name: Northeast<br>weapon: HAND GUN<br>count: 1165</div>`)[0];
+                popup_965e52d4c1b99cd87cc05e78bd89c2e9.setContent(html_bf7974d3613864ff5451e37c8561a958);
+            
+        
+
+        circle_305639aaa4fd0846ea8013fed8b80118.bindPopup(popup_965e52d4c1b99cd87cc05e78bd89c2e9)
+        ;
+
+        
+    
+    
+            var circle_54acb9d153a19d2a67d540ef0a9c6b2c = L.circle(
+                [33.97393190661478, -117.77883579766538],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 385.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_25f2748f182a878bc925f5d89c688937 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9e613225529315ae9940c4200821f2d = $(`<div id="html_d9e613225529315ae9940c4200821f2d" style="width: 100.0%; height: 100.0%;">area_name: Northeast<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 257</div>`)[0];
+                popup_25f2748f182a878bc925f5d89c688937.setContent(html_d9e613225529315ae9940c4200821f2d);
+            
+        
+
+        circle_54acb9d153a19d2a67d540ef0a9c6b2c.bindPopup(popup_25f2748f182a878bc925f5d89c688937)
+        ;
+
+        
+    
+    
+            var circle_88e92973f844115062c39807fb811608 = L.circle(
+                [34.104884985835696, -118.23754560906517],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 529.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_4ff301f39c694a162d03e6ebca9ff800 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7448445b362516e19af84c48e86e63e = $(`<div id="html_a7448445b362516e19af84c48e86e63e" style="width: 100.0%; height: 100.0%;">area_name: Northeast<br>weapon: OTHER KNIFE<br>count: 353</div>`)[0];
+                popup_4ff301f39c694a162d03e6ebca9ff800.setContent(html_a7448445b362516e19af84c48e86e63e);
+            
+        
+
+        circle_88e92973f844115062c39807fb811608.bindPopup(popup_4ff301f39c694a162d03e6ebca9ff800)
+        ;
+
+        
+    
+    
+            var circle_61db6e36b633f12b07f3196237507cfd = L.circle(
+                [33.90426651624549, -117.76661669675092],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1662.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_5fd931e43660d7da0fcefdb7b60681a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21216338acf90494100708f1f13dd12e = $(`<div id="html_21216338acf90494100708f1f13dd12e" style="width: 100.0%; height: 100.0%;">area_name: Olympic<br>weapon: HAND GUN<br>count: 1108</div>`)[0];
+                popup_5fd931e43660d7da0fcefdb7b60681a6.setContent(html_21216338acf90494100708f1f13dd12e);
+            
+        
+
+        circle_61db6e36b633f12b07f3196237507cfd.bindPopup(popup_5fd931e43660d7da0fcefdb7b60681a6)
+        ;
+
+        
+    
+    
+            var circle_bb7a18b750eea9e96f6a664b1b2c71d4 = L.circle(
+                [33.868487640449445, -117.63362059925093],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 801.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_1c5f76fa8373c4f9f94ccd8bd6b08fbd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73f1d4b602682c78a451240abaf172a8 = $(`<div id="html_73f1d4b602682c78a451240abaf172a8" style="width: 100.0%; height: 100.0%;">area_name: Olympic<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 534</div>`)[0];
+                popup_1c5f76fa8373c4f9f94ccd8bd6b08fbd.setContent(html_73f1d4b602682c78a451240abaf172a8);
+            
+        
+
+        circle_bb7a18b750eea9e96f6a664b1b2c71d4.bindPopup(popup_1c5f76fa8373c4f9f94ccd8bd6b08fbd)
+        ;
+
+        
+    
+    
+            var circle_834f77ced578cce41d348cd1bb4d4f85 = L.circle(
+                [34.05814801762114, -118.29917202643172],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 681.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_d52b05bd42349cf6a224c73b6673505b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c77625df79896d8be6a513794957dad = $(`<div id="html_7c77625df79896d8be6a513794957dad" style="width: 100.0%; height: 100.0%;">area_name: Olympic<br>weapon: OTHER KNIFE<br>count: 454</div>`)[0];
+                popup_d52b05bd42349cf6a224c73b6673505b.setContent(html_7c77625df79896d8be6a513794957dad);
+            
+        
+
+        circle_834f77ced578cce41d348cd1bb4d4f85.bindPopup(popup_d52b05bd42349cf6a224c73b6673505b)
+        ;
+
+        
+    
+    
+            var circle_69e74323c39f22a4afe0da3b1ecd3004 = L.circle(
+                [33.74367860576923, -117.56599951923077],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1248.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_aa85b9c2ba7a26ce86a2f752e307315c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b202380935e114c86d7fd33def41f3f = $(`<div id="html_8b202380935e114c86d7fd33def41f3f" style="width: 100.0%; height: 100.0%;">area_name: Pacific<br>weapon: HAND GUN<br>count: 832</div>`)[0];
+                popup_aa85b9c2ba7a26ce86a2f752e307315c.setContent(html_8b202380935e114c86d7fd33def41f3f);
+            
+        
+
+        circle_69e74323c39f22a4afe0da3b1ecd3004.bindPopup(popup_aa85b9c2ba7a26ce86a2f752e307315c)
+        ;
+
+        
+    
+    
+            var circle_699e918f7a8a840be6b15bee149b9381 = L.circle(
+                [33.49217073170731, -116.70483707317074],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 307.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_e72801c8496e5b0a4d860370ceceb934 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3d19aa6f91ebe322e23e6fe6ab08e23 = $(`<div id="html_d3d19aa6f91ebe322e23e6fe6ab08e23" style="width: 100.0%; height: 100.0%;">area_name: Pacific<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 205</div>`)[0];
+                popup_e72801c8496e5b0a4d860370ceceb934.setContent(html_d3d19aa6f91ebe322e23e6fe6ab08e23);
+            
+        
+
+        circle_699e918f7a8a840be6b15bee149b9381.bindPopup(popup_e72801c8496e5b0a4d860370ceceb934)
+        ;
+
+        
+    
+    
+            var circle_33834238f2b67d0741c27034a2c12f07 = L.circle(
+                [33.67895810397553, -117.35459541284405],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 490.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_4a9a0246896ad2fc07e6cefc3bc554d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a619916b448840f3847d284e72a09df1 = $(`<div id="html_a619916b448840f3847d284e72a09df1" style="width: 100.0%; height: 100.0%;">area_name: Pacific<br>weapon: OTHER KNIFE<br>count: 327</div>`)[0];
+                popup_4a9a0246896ad2fc07e6cefc3bc554d6.setContent(html_a619916b448840f3847d284e72a09df1);
+            
+        
+
+        circle_33834238f2b67d0741c27034a2c12f07.bindPopup(popup_4a9a0246896ad2fc07e6cefc3bc554d6)
+        ;
+
+        
+    
+    
+            var circle_262499e187e9d82e1fb10cf2f97004b4 = L.circle(
+                [33.95075580246913, -117.88580847736625],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1822.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_467e3c05a0be3d52fae3cf58b4886d6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad23fb955ec1b54b3c4d89a19453d1c2 = $(`<div id="html_ad23fb955ec1b54b3c4d89a19453d1c2" style="width: 100.0%; height: 100.0%;">area_name: Rampart<br>weapon: HAND GUN<br>count: 1215</div>`)[0];
+                popup_467e3c05a0be3d52fae3cf58b4886d6e.setContent(html_ad23fb955ec1b54b3c4d89a19453d1c2);
+            
+        
+
+        circle_262499e187e9d82e1fb10cf2f97004b4.bindPopup(popup_467e3c05a0be3d52fae3cf58b4886d6e)
+        ;
+
+        
+    
+    
+            var circle_32b8194f0b9728741735cb11b5225463 = L.circle(
+                [34.0280923, -118.1571763],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1500.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_92590219b906b0f2b7b0077f8aa16d1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5752d9ea7847a592c003e13a1a4df8c0 = $(`<div id="html_5752d9ea7847a592c003e13a1a4df8c0" style="width: 100.0%; height: 100.0%;">area_name: Rampart<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 1000</div>`)[0];
+                popup_92590219b906b0f2b7b0077f8aa16d1b.setContent(html_5752d9ea7847a592c003e13a1a4df8c0);
+            
+        
+
+        circle_32b8194f0b9728741735cb11b5225463.bindPopup(popup_92590219b906b0f2b7b0077f8aa16d1b)
+        ;
+
+        
+    
+    
+            var circle_4a66daf732a94a4a806f3189f7a1ce17 = L.circle(
+                [34.06466360946745, -118.27523343195266],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 507.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_ee9a19aef1ba9fc104e636096ab84401 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65747d2279714cb9ea5f30c5889d9f8c = $(`<div id="html_65747d2279714cb9ea5f30c5889d9f8c" style="width: 100.0%; height: 100.0%;">area_name: Rampart<br>weapon: OTHER KNIFE<br>count: 338</div>`)[0];
+                popup_ee9a19aef1ba9fc104e636096ab84401.setContent(html_65747d2279714cb9ea5f30c5889d9f8c);
+            
+        
+
+        circle_4a66daf732a94a4a806f3189f7a1ce17.bindPopup(popup_ee9a19aef1ba9fc104e636096ab84401)
+        ;
+
+        
+    
+    
+            var circle_50bd2ec1d941bd55216d75414ca47dd9 = L.circle(
+                [33.839847270349786, -117.91662801569139],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4588.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_0cc9af0a57835525fc15439dc532d50a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b51176f2f7bc404d06d6b493a098de46 = $(`<div id="html_b51176f2f7bc404d06d6b493a098de46" style="width: 100.0%; height: 100.0%;">area_name: Southeast<br>weapon: HAND GUN<br>count: 3059</div>`)[0];
+                popup_0cc9af0a57835525fc15439dc532d50a.setContent(html_b51176f2f7bc404d06d6b493a098de46);
+            
+        
+
+        circle_50bd2ec1d941bd55216d75414ca47dd9.bindPopup(popup_0cc9af0a57835525fc15439dc532d50a)
+        ;
+
+        
+    
+    
+            var circle_bdd90e846ba493b207e751b4d7e6f897 = L.circle(
+                [33.72470974576271, -117.51619406779662],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 708.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_0ff0fa365287eea46a1417edaf8fa37d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee5730e819defda5c3a52abf0cebd553 = $(`<div id="html_ee5730e819defda5c3a52abf0cebd553" style="width: 100.0%; height: 100.0%;">area_name: Southeast<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 472</div>`)[0];
+                popup_0ff0fa365287eea46a1417edaf8fa37d.setContent(html_ee5730e819defda5c3a52abf0cebd553);
+            
+        
+
+        circle_bdd90e846ba493b207e751b4d7e6f897.bindPopup(popup_0ff0fa365287eea46a1417edaf8fa37d)
+        ;
+
+        
+    
+    
+            var circle_e66833d6c951691c40e475297a0b9f25 = L.circle(
+                [33.86122776470588, -117.98687],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1275.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_ae01ce8d0136e227215028316d6d8d86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56b8f6903fe159c1e92c5c97c69ed69a = $(`<div id="html_56b8f6903fe159c1e92c5c97c69ed69a" style="width: 100.0%; height: 100.0%;">area_name: Southeast<br>weapon: OTHER KNIFE<br>count: 850</div>`)[0];
+                popup_ae01ce8d0136e227215028316d6d8d86.setContent(html_56b8f6903fe159c1e92c5c97c69ed69a);
+            
+        
+
+        circle_e66833d6c951691c40e475297a0b9f25.bindPopup(popup_ae01ce8d0136e227215028316d6d8d86)
+        ;
+
+        
+    
+    
+            var circle_50178c2af260202c920fa54ab5492b41 = L.circle(
+                [33.97570888981636, -118.17324728714524],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3594.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_d6475d106f0aa9a52e8aa5f92e72e8a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c41b82f0a7e948de52a7b666e7f5031 = $(`<div id="html_1c41b82f0a7e948de52a7b666e7f5031" style="width: 100.0%; height: 100.0%;">area_name: Southwest<br>weapon: HAND GUN<br>count: 2396</div>`)[0];
+                popup_d6475d106f0aa9a52e8aa5f92e72e8a3.setContent(html_1c41b82f0a7e948de52a7b666e7f5031);
+            
+        
+
+        circle_50178c2af260202c920fa54ab5492b41.bindPopup(popup_d6475d106f0aa9a52e8aa5f92e72e8a3)
+        ;
+
+        
+    
+    
+            var circle_075791bbfd3f181d2ab68e879d5e5978 = L.circle(
+                [33.982356094929884, -118.19030474649408],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1390.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_1d2b2d14cac14f6392b6d2b0bdfb6634 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5128bf5097b6762603620b91f6fc4878 = $(`<div id="html_5128bf5097b6762603620b91f6fc4878" style="width: 100.0%; height: 100.0%;">area_name: Southwest<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 927</div>`)[0];
+                popup_1d2b2d14cac14f6392b6d2b0bdfb6634.setContent(html_5128bf5097b6762603620b91f6fc4878);
+            
+        
+
+        circle_075791bbfd3f181d2ab68e879d5e5978.bindPopup(popup_1d2b2d14cac14f6392b6d2b0bdfb6634)
+        ;
+
+        
+    
+    
+            var circle_39c8359065be173659ef7371f889863b = L.circle(
+                [34.018613461538465, -118.32111225961538],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 624.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_3e0ee4105a564115e0a23036a9086ae7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7b2bec6e42cd18a1acc7b096abfc842 = $(`<div id="html_f7b2bec6e42cd18a1acc7b096abfc842" style="width: 100.0%; height: 100.0%;">area_name: Southwest<br>weapon: OTHER KNIFE<br>count: 416</div>`)[0];
+                popup_3e0ee4105a564115e0a23036a9086ae7.setContent(html_f7b2bec6e42cd18a1acc7b096abfc842);
+            
+        
+
+        circle_39c8359065be173659ef7371f889863b.bindPopup(popup_3e0ee4105a564115e0a23036a9086ae7)
+        ;
+
+        
+    
+    
+            var circle_65f67500c1fa75edecc1be136a089ce2 = L.circle(
+                [34.13371433756806, -118.38172740471869],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 826.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_7925da4f49455d07bab783a11f937554 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5352dbe9d9c1121d3b2dcc97fa783d3f = $(`<div id="html_5352dbe9d9c1121d3b2dcc97fa783d3f" style="width: 100.0%; height: 100.0%;">area_name: Topanga<br>weapon: HAND GUN<br>count: 551</div>`)[0];
+                popup_7925da4f49455d07bab783a11f937554.setContent(html_5352dbe9d9c1121d3b2dcc97fa783d3f);
+            
+        
+
+        circle_65f67500c1fa75edecc1be136a089ce2.bindPopup(popup_7925da4f49455d07bab783a11f937554)
+        ;
+
+        
+    
+    
+            var circle_7f71652ffecd0693f0fce087847f84b5 = L.circle(
+                [34.066825095057034, -118.1449741444867],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 394.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_fc5c377977c39215a28e73f854a6cafc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_525d9d8a50abf269c46542fe762193a9 = $(`<div id="html_525d9d8a50abf269c46542fe762193a9" style="width: 100.0%; height: 100.0%;">area_name: Topanga<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 263</div>`)[0];
+                popup_fc5c377977c39215a28e73f854a6cafc.setContent(html_525d9d8a50abf269c46542fe762193a9);
+            
+        
+
+        circle_7f71652ffecd0693f0fce087847f84b5.bindPopup(popup_fc5c377977c39215a28e73f854a6cafc)
+        ;
+
+        
+    
+    
+            var circle_ab7ddf821cc8f9ad2be7bfdd469f469d = L.circle(
+                [34.200099310344825, -118.59573724137931],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 217.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_1689dd57fb674b04481c3ed107baa2a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6f9cd6ea0540d5751eaa2fa92c1a0b7 = $(`<div id="html_a6f9cd6ea0540d5751eaa2fa92c1a0b7" style="width: 100.0%; height: 100.0%;">area_name: Topanga<br>weapon: OTHER KNIFE<br>count: 145</div>`)[0];
+                popup_1689dd57fb674b04481c3ed107baa2a6.setContent(html_a6f9cd6ea0540d5751eaa2fa92c1a0b7);
+            
+        
+
+        circle_ab7ddf821cc8f9ad2be7bfdd469f469d.bindPopup(popup_1689dd57fb674b04481c3ed107baa2a6)
+        ;
+
+        
+    
+    
+            var circle_ec8e2025d31e189f2e5cb4e9311db82e = L.circle(
+                [34.11538136645963, -118.20252132505175],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 724.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_aca5ad5a90324f19a2a02a475985cafd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e0c5fd93cf83aa6e72dbc350eaf3644 = $(`<div id="html_7e0c5fd93cf83aa6e72dbc350eaf3644" style="width: 100.0%; height: 100.0%;">area_name: Van Nuys<br>weapon: HAND GUN<br>count: 483</div>`)[0];
+                popup_aca5ad5a90324f19a2a02a475985cafd.setContent(html_7e0c5fd93cf83aa6e72dbc350eaf3644);
+            
+        
+
+        circle_ec8e2025d31e189f2e5cb4e9311db82e.bindPopup(popup_aca5ad5a90324f19a2a02a475985cafd)
+        ;
+
+        
+    
+    
+            var circle_cc4e360ca5649ccc8b28905a26c65978 = L.circle(
+                [33.9016811634349, -117.46293019390582],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 541.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_54df40e8e7ff8c6edf357af23ec714b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bc5eeac4fcb70eaebb8cafd02abe8be = $(`<div id="html_7bc5eeac4fcb70eaebb8cafd02abe8be" style="width: 100.0%; height: 100.0%;">area_name: Van Nuys<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 361</div>`)[0];
+                popup_54df40e8e7ff8c6edf357af23ec714b4.setContent(html_7bc5eeac4fcb70eaebb8cafd02abe8be);
+            
+        
+
+        circle_cc4e360ca5649ccc8b28905a26c65978.bindPopup(popup_54df40e8e7ff8c6edf357af23ec714b4)
+        ;
+
+        
+    
+    
+            var circle_aedb1df7cd353963b981206a40f675f6 = L.circle(
+                [33.97320310559006, -117.71221242236025],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 241.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_7dbc068437291fe6350fcd7600490d7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bda96daecbb728078ecdf724bdbbad6 = $(`<div id="html_4bda96daecbb728078ecdf724bdbbad6" style="width: 100.0%; height: 100.0%;">area_name: Van Nuys<br>weapon: OTHER KNIFE<br>count: 161</div>`)[0];
+                popup_7dbc068437291fe6350fcd7600490d7e.setContent(html_4bda96daecbb728078ecdf724bdbbad6);
+            
+        
+
+        circle_aedb1df7cd353963b981206a40f675f6.bindPopup(popup_7dbc068437291fe6350fcd7600490d7e)
+        ;
+
+        
+    
+    
+            var circle_9408d793250894e7318aeb9345a2b239 = L.circle(
+                [34.04807492957747, -118.42454563380282],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 532.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_9ad6c70b2e2b3a95db3109032966ce27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf7cf285f25cae4f7b688e5964e90898 = $(`<div id="html_cf7cf285f25cae4f7b688e5964e90898" style="width: 100.0%; height: 100.0%;">area_name: West LA<br>weapon: HAND GUN<br>count: 355</div>`)[0];
+                popup_9ad6c70b2e2b3a95db3109032966ce27.setContent(html_cf7cf285f25cae4f7b688e5964e90898);
+            
+        
+
+        circle_9408d793250894e7318aeb9345a2b239.bindPopup(popup_9ad6c70b2e2b3a95db3109032966ce27)
+        ;
+
+        
+    
+    
+            var circle_5ec9422da976119d8fab7b151b125cf9 = L.circle(
+                [34.046648837209304, -118.4349691860465],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 258.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_b22a603371cf0128b369bfa862209a1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f5601f856a9c3e940ccd5a2d72336e2 = $(`<div id="html_8f5601f856a9c3e940ccd5a2d72336e2" style="width: 100.0%; height: 100.0%;">area_name: West LA<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 172</div>`)[0];
+                popup_b22a603371cf0128b369bfa862209a1f.setContent(html_8f5601f856a9c3e940ccd5a2d72336e2);
+            
+        
+
+        circle_5ec9422da976119d8fab7b151b125cf9.bindPopup(popup_b22a603371cf0128b369bfa862209a1f)
+        ;
+
+        
+    
+    
+            var circle_276526237097dd6e8f24835a029be5fc = L.circle(
+                [33.6220925, -116.95598],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_3c90f4220794a198864e8a946aced950 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bac85375a1f79676e51747aca1fc8a0 = $(`<div id="html_8bac85375a1f79676e51747aca1fc8a0" style="width: 100.0%; height: 100.0%;">area_name: West LA<br>weapon: OTHER KNIFE<br>count: 80</div>`)[0];
+                popup_3c90f4220794a198864e8a946aced950.setContent(html_8bac85375a1f79676e51747aca1fc8a0);
+            
+        
+
+        circle_276526237097dd6e8f24835a029be5fc.bindPopup(popup_3c90f4220794a198864e8a946aced950)
+        ;
+
+        
+    
+    
+            var circle_bb12759a50126f462dff457054bfab30 = L.circle(
+                [33.92378237934905, -117.58671380471381],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1336.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_1fecd0e0859b6e05c82e4a2a7ceb1e9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8add449902f924916a0c73eb7eaeaab9 = $(`<div id="html_8add449902f924916a0c73eb7eaeaab9" style="width: 100.0%; height: 100.0%;">area_name: West Valley<br>weapon: HAND GUN<br>count: 891</div>`)[0];
+                popup_1fecd0e0859b6e05c82e4a2a7ceb1e9b.setContent(html_8add449902f924916a0c73eb7eaeaab9);
+            
+        
+
+        circle_bb12759a50126f462dff457054bfab30.bindPopup(popup_1fecd0e0859b6e05c82e4a2a7ceb1e9b)
+        ;
+
+        
+    
+    
+            var circle_c07410b0a18f36f51028b0e6038b2381 = L.circle(
+                [34.06705222222222, -118.08094407407407],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 405.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_0ec940e0831960785d5ae58a50f0ad43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_701b9c60b2a0db11ef8dfc8163b0436d = $(`<div id="html_701b9c60b2a0db11ef8dfc8163b0436d" style="width: 100.0%; height: 100.0%;">area_name: West Valley<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 270</div>`)[0];
+                popup_0ec940e0831960785d5ae58a50f0ad43.setContent(html_701b9c60b2a0db11ef8dfc8163b0436d);
+            
+        
+
+        circle_c07410b0a18f36f51028b0e6038b2381.bindPopup(popup_0ec940e0831960785d5ae58a50f0ad43)
+        ;
+
+        
+    
+    
+            var circle_8a62893f26ffa8036eb5d4da1ea4a32c = L.circle(
+                [34.19490730337079, -118.52013202247191],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 267.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_4799698b7ea2bbadfc92fa8f9c224b38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ead8e72531582e20bcfca3781375887 = $(`<div id="html_4ead8e72531582e20bcfca3781375887" style="width: 100.0%; height: 100.0%;">area_name: West Valley<br>weapon: OTHER KNIFE<br>count: 178</div>`)[0];
+                popup_4799698b7ea2bbadfc92fa8f9c224b38.setContent(html_4ead8e72531582e20bcfca3781375887);
+            
+        
+
+        circle_8a62893f26ffa8036eb5d4da1ea4a32c.bindPopup(popup_4799698b7ea2bbadfc92fa8f9c224b38)
+        ;
+
+        
+    
+    
+            var circle_c47c90925a377d27666822d939a3bb3d = L.circle(
+                [33.83152552631579, -117.56846631578948],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1140.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_b7a40a61ef51ce41276d25c383eab7e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e7aa59893de4604b615fa461712abf1 = $(`<div id="html_6e7aa59893de4604b615fa461712abf1" style="width: 100.0%; height: 100.0%;">area_name: Wilshire<br>weapon: HAND GUN<br>count: 760</div>`)[0];
+                popup_b7a40a61ef51ce41276d25c383eab7e2.setContent(html_6e7aa59893de4604b615fa461712abf1);
+            
+        
+
+        circle_c47c90925a377d27666822d939a3bb3d.bindPopup(popup_b7a40a61ef51ce41276d25c383eab7e2)
+        ;
+
+        
+    
+    
+            var circle_91500829a651afe3208026c4bd8f7714 = L.circle(
+                [34.05445040650406, -118.34561002710028],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 553.5, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_76babd5ba25421aad367ff331c9d6738 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62a4afa7af89f6d1bb23ada1f2984016 = $(`<div id="html_62a4afa7af89f6d1bb23ada1f2984016" style="width: 100.0%; height: 100.0%;">area_name: Wilshire<br>weapon: KNIFE WITH BLADE 6INCHES OR LESS<br>count: 369</div>`)[0];
+                popup_76babd5ba25421aad367ff331c9d6738.setContent(html_62a4afa7af89f6d1bb23ada1f2984016);
+            
+        
+
+        circle_91500829a651afe3208026c4bd8f7714.bindPopup(popup_76babd5ba25421aad367ff331c9d6738)
+        ;
+
+        
+    
+    
+            var circle_fe424cef045a74139e9b6a5c6a557f8d = L.circle(
+                [33.76241982758621, -117.32601293103447],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 174.0, "stroke": true, "weight": 3}
+            ).addTo(map_667872f7312d05290fe839223b1603c0);
+        
+    
+        var popup_8ca05832fc76ee6de4309156140bd89f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b43861b4bc5de51d7312b4ae7c503623 = $(`<div id="html_b43861b4bc5de51d7312b4ae7c503623" style="width: 100.0%; height: 100.0%;">area_name: Wilshire<br>weapon: OTHER KNIFE<br>count: 116</div>`)[0];
+                popup_8ca05832fc76ee6de4309156140bd89f.setContent(html_b43861b4bc5de51d7312b4ae7c503623);
+            
+        
+
+        circle_fe424cef045a74139e9b6a5c6a557f8d.bindPopup(popup_8ca05832fc76ee6de4309156140bd89f)
+        ;
+
+        
+    
+</script>
+</html>
