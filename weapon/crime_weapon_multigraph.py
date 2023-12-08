@@ -3,7 +3,7 @@ import networkx as nx
 
 # MG = nx.MultiGraph()
 #
-# df = pd.read_csv('la_crime_cleaned.csv')
+# df = pd.read_csv('../la_crime_cleaned.csv')
 # # filter those with no description and unknown weapon
 # filtered_df = df[df['weapon_description'] != 'no description']
 # filtered_df = filtered_df[filtered_df['weapon_description'] != 'UNKNOWN WEAPON/OTHER WEAPON']
