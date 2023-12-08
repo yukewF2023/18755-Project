@@ -6,6 +6,7 @@ df = pd.read_csv('../la_crime_cleaned.csv')
 weapons = ["KNIFE WITH BLADE 6INCHES OR LESS", "HAND GUN", "OTHER KNIFE"]
 filtered_df = df[df['weapon_description'].isin(weapons)]
 
+# Filter for specific weapons
 crime_counts = filtered_df.groupby(['area_name', 'weapon_description']).agg({
     'ID': 'count',
     'longitude': 'mean',
@@ -13,6 +14,7 @@ crime_counts = filtered_df.groupby(['area_name', 'weapon_description']).agg({
 }).reset_index()
 print(crime_counts.head())
 
+# Create a Folium map centered on Los Angeles
 m = folium.Map(location=[34.0522, -118.2437], zoom_start=11)
 
 # Define a color for each weapon type

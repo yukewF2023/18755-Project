@@ -7,6 +7,7 @@ df = pd.read_csv('../la_crime_cleaned.csv')
 filtered_df = df[df['weapon_description'] != 'no description']
 filtered_df = filtered_df[filtered_df['weapon_description'] != 'UNKNOWN WEAPON/OTHER WEAPON']
 
+# Network building - bipartite network
 G = nx.Graph()
 
 for index, row in filtered_df.iterrows():
