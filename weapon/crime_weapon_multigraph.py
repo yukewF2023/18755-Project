@@ -1,28 +1,28 @@
 import pandas as pd
 import networkx as nx
 
-# MG = nx.MultiGraph()
+MG = nx.MultiGraph()
+
+df = pd.read_csv('../la_crime_cleaned.csv')
+# filter those with no description and unknown weapon
+filtered_df = df[df['weapon_description'] != 'no description']
+filtered_df = filtered_df[filtered_df['weapon_description'] != 'UNKNOWN WEAPON/OTHER WEAPON']
+
+for index, row in filtered_df.iterrows():
+    crime = row['crime_code_description']
+    weapon = row['weapon_description']
+
+    if not MG.has_node(crime):
+        MG.add_node(crime, type='crime')
+    if not MG.has_node(weapon):
+        MG.add_node(weapon, type='weapon')
+
+    MG.add_edge(crime, weapon)
+
+print(f"Number of nodes: {MG.number_of_nodes()}")
+print(f"Number of edges: {MG.number_of_edges()}")
 #
-# df = pd.read_csv('../la_crime_cleaned.csv')
-# # filter those with no description and unknown weapon
-# filtered_df = df[df['weapon_description'] != 'no description']
-# filtered_df = filtered_df[filtered_df['weapon_description'] != 'UNKNOWN WEAPON/OTHER WEAPON']
-#
-# for index, row in filtered_df.iterrows():
-#     crime = row['crime_code_description']
-#     weapon = row['weapon_description']
-#
-#     if not MG.has_node(crime):
-#         MG.add_node(crime, type='crime')
-#     if not MG.has_node(weapon):
-#         MG.add_node(weapon, type='weapon')
-#
-#     MG.add_edge(crime, weapon)
-#
-# print(f"Number of nodes: {MG.number_of_nodes()}")
-# print(f"Number of edges: {MG.number_of_edges()}")
-#
-# nx.write_gml(MG, "crime_weapon_multigraph.gml")
+nx.write_gml(MG, "crime_weapon_multigraph.gml")
 MG = nx.read_gml("crime_weapon_multigraph.gml")
 
 def project_bipartite_multigraph(G, nodes):
@@ -44,23 +44,18 @@ def project_bipartite_multigraph(G, nodes):
     return projection
 
 # Projecting the multigraph
-# Crime-Crime Projection
-# crime_nodes = set(n for n, d in MG.nodes(data=True) if d['type'] == 'crime')
-# crime_projection = project_bipartite_multigraph(MG, crime_nodes)
-# nx.write_gml(crime_projection, "crime_projection.gml")
-#
-# # Weapon-Weapon Projection
-# weapon_nodes = set(n for n, d in MG.nodes(data=True) if d['type'] == 'weapon')
-# weapon_projection = project_bipartite_multigraph(MG, weapon_nodes)
-# nx.write_gml(weapon_projection, "weapon_projection.gml")
+# Weapon-Weapon Projection
+weapon_nodes = set(n for n, d in MG.nodes(data=True) if d['type'] == 'weapon')
+weapon_projection = project_bipartite_multigraph(MG, weapon_nodes)
+nx.write_gml(weapon_projection, "weapon_projection.gml")
 
 weapon_projection = nx.read_gml("weapon_projection.gml")
-# print(f"Number of nodes: {weapon_projection.number_of_nodes()}")
-# # calculate the average degree of the weapon projection
-# total_degree = 0
-# for node in weapon_projection.nodes():
-#     total_degree += weapon_projection.degree(node)
-# print(f"Average degree of the weapon projection: {total_degree / weapon_projection.number_of_nodes()}") # 70
+print(f"Number of nodes: {weapon_projection.number_of_nodes()}")
+# calculate the average degree of the weapon projection
+total_degree = 0
+for node in weapon_projection.nodes():
+    total_degree += weapon_projection.degree(node)
+print(f"Average degree of the weapon projection: {total_degree / weapon_projection.number_of_nodes()}")
 
 # --------------------------------------------
 # Calculating the weighted degree centrality
