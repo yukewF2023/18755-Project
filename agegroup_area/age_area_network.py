@@ -3,6 +3,7 @@ import pandas as pd
 import networkx as nx
 
 # %%
+print("Script is running...")
 data = pd.read_csv('../la_crime_cleaned.csv')
 
 # Filter out invalid 'victim_sex' values
@@ -46,6 +47,7 @@ nx.write_gexf(G, 'la_crime_network_age_groups.gexf')
 degree_centrality = nx.degree_centrality(G)
 # Sort the nodes by degree centrality
 sorted_degree_centrality = sorted(degree_centrality.items(), key=lambda x: x[1], reverse=True)
+print("========== Top 5 nodes by degree centrality ==========")
 for node, centrality in sorted_degree_centrality[:5]:
     print(f"Node: {node}, Degree Centrality: {centrality}")
 
@@ -55,6 +57,7 @@ for node, centrality in sorted_degree_centrality[:5]:
 edge_weights = [(u, v, d['weight']) for u, v, d in G.edges(data=True)]
 # Sort the edges by weight
 sorted_edge_weights = sorted(edge_weights, key=lambda x: x[2], reverse=True)
+print("========== Top 5 edges by weight ==========")
 for u, v, weight in sorted_edge_weights[:5]:
     print(f"Edge: ({u}, {v}), Weight: {weight}")
 
@@ -81,6 +84,7 @@ for age_group in age_groups:
     sorted_areas = sorted(crime_by_area_for_age_group[age_group].items(), key=lambda x: x[1], reverse=True)
     sorted_areas_by_age_group[age_group] = sorted_areas
 
+print("========== Areas sorted by crime count for each age group ==========")
 print(sorted_areas_by_age_group)
 
 
