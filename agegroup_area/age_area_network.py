@@ -81,7 +81,7 @@ for age_group in age_groups:
     sorted_areas = sorted(crime_by_area_for_age_group[age_group].items(), key=lambda x: x[1], reverse=True)
     sorted_areas_by_age_group[age_group] = sorted_areas
 
-sorted_areas_by_age_group
+print(sorted_areas_by_age_group)
 
 
 # %%
