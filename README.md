@@ -13,7 +13,7 @@ This project involves the analysis of different networks related to crime data. 
 
 ### Temporal Network Analysis
 
-- **Building the Temporal Network and Analysis**
+- **Building the Temporal Network and Analysis** (please be aware that this step will take a long time to run)
   ```bash
   cd temporal
   python3 temporal.py

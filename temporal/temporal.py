@@ -18,6 +18,7 @@ def temporal_motifs(data_all):
     Returns:
         DataFrame, DataFrame: DataFrames of transitions and nodes.
     """
+    print("Constructing network now...Please note that this may take a long time.")
     sorted_df = data_all.sort_values(by=['date_occured'])
     transitions = []
     unique_dates = sorted_df['date_occured'].unique()
